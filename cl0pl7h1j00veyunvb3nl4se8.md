@@ -83,8 +83,6 @@ Earlier on, we mentioned the 'Merkle tree'. A Merkle tree in the blockchain cont
 
 ![Hash_Tree.svg.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1647193153058/pID0zkg1T.png align="left")
 
-I didn't plan to get this deep, but here we are. I'll try to reduce what comes next.
-
 ## Types of Blockchain networks
 
 **Private Blockchain Network:** These networks implement the basic underlying blockchain technology components we mentioned earlier and more, but in this case, the network is not publicly accessible.
@@ -101,9 +99,9 @@ I didn't plan to get this deep, but here we are. I'll try to reduce what comes n
 
 Most Blockchain but not all, have certain core characteristics to make them accessible and open to the public, and at the same time, keep transactions and activities happening on the chain within the bounds of sanity.
 
-**Consensus** **\&gt;** Before data is written into a block and linked to the blockchain, the majority of the participant on the network have to agree.
+**Consensus** : Before data is written into a block and linked to the blockchain, the majority of the participant on the network have to agree.
 
-**Finality** **\&gt;** An real-life scenario of finality would be that after paying for a frozen chicken at a store and it is cut, sealed and handed over to you, the purchase is final, and the chicken can't be returned. Except that this is Nigeria!! anything can happen, till that chicken is eaten.
+**Finality** : A real-life scenario of finality would be that after paying for a frozen chicken at a store and it is cut, sealed and handed over to you, the purchase is final, and the chicken can't be returned. Except that this is Nigeria!! anything can happen, till that chicken is eaten.
 
 That same idea is carried over to how blockchains operate, most transactions don't instantly attain finality, and this is dependent on the underlying network's design. In most cases, finality happens over time, 'probabilistic finality'. In this situation, the more blocks are mined atop the block in which a certain transaction is written, the more it becomes impossible to revert.
 
@@ -116,9 +114,9 @@ Some other blockchain network transactions attain instant or near instant finali
 
 Reverting a transaction is considered malicious, so if a validator tries to do so and the system picks up the actor, their stake is slashed. This makes it gives finality an economic value. Examples of blockchains using Proof of Stake include Polkadot, Cardano and now Ethereum.
 
-**Immutability** **\&gt;** This means, once data has successfully been recorded in a block and enough blocks have been mined ahead of that block to reach finality, that data can no longer be changed.
+**Immutability :** This means, once data has successfully been recorded in a block and enough blocks have been mined ahead of that block to reach finality, that data can no longer be changed.
 
-**Provenance** **\&gt;** A user can prove beyond reasonable doubt that something happened on the chain. This happens due to two main reasons, one is that blockchain data and transactions are public, and the other is that transactions require practically unforgeable signatures to be valid, so any finalized transaction, can be proven to have been intentionally carried out.
+**Provenance** : A user can prove beyond reasonable doubt that something happened on the chain. This happens due to two main reasons, one is that blockchain data and transactions are public, and the other is that transactions require practically unforgeable signatures to be valid, so any finalized transaction, can be proven to have been intentionally carried out.
 
 ## Blockchain Use Cases
 
