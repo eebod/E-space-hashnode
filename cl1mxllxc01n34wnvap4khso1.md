@@ -8,7 +8,7 @@ tags: oracle, blockchain, bitcoin, ethereum, web3
 
 ---
 
-There is this African saying; (more likely Yoruba) ::&gt;
+There is an African saying; (more likely Yoruba) ::&gt;
 
 > A single tree can't make a forest
 
