@@ -22,8 +22,9 @@ An Oracle is a bridge between on-chain data and off-chain data in a blockchain n
 
 * **On-Chain Data**: In a previous [article](https://ebode.hashnode.dev/what-is-blockchain-technolgy), we talked about the structure of the blockchain and how it works. On a blockchain network, some nodes participate in creating and validating transactions and also keeping the network safe. Most blockchain networks are built to guarantee uniformity. Uniformity in this context means everyone has the same data, therefore they can all agree on how to move forward(Consensus). If the data available to participants on the network for one reason or the other goes out of sync, multiplied across the possible thousands of nodes on the network, chaos would rip through the network and break it down.
     
-    This data available within the blockchain network is the on-chain data. The on-chain data consists of all information written into blocks, most of which are transactional data(user A transferred D amount to user B ) 'A, D and B' are data. There is also the block's metadata( information about a block in the blockchain ), all of this makes up the data on the chain(on-chain).
-    
+
+This data available within the blockchain network is the on-chain data. The on-chain data consists of all information written into blocks, most of which are transactional data(user A transferred D amount to user B ) 'A, D and B' are data. There is also the block's metadata( information about a block in the blockchain ), all of this makes up the data on the chain(on-chain).
+
 * **Off-Chain Data**: It's any data that comes from the outside world (outside the blockchain network). Off-chain data is not limited to anything as long as it can be computed and transferred, it is valid. Examples of off-chain data include::
     
     **\[-\]** Total number of astronauts aboard the International space station and their names.
@@ -34,8 +35,8 @@ An Oracle is a bridge between on-chain data and off-chain data in a blockchain n
     
     **\[-\]** Prices of stock and assets in the real world.
     
-    Almost any type of data from the real world can be regarded as off-chain data. A simple definition of off-chain data is that it is information that cannot be generated or would rarely be created on the blockchain but rather gotten from outside it.
-    
+
+Almost any type of data from the real world can be regarded as off-chain data. A simple definition of off-chain data is that it is information that cannot be generated or would rarely be created on the blockchain but rather gotten from outside it.
 
 Back to the definition of an oracle, it is an entity, program, tool, medium or bridge that brings data from the outside world onto the blockchain network.
 
@@ -53,7 +54,7 @@ Off-chain data became important with the existence of smart contracts. It meant 
 
 This new shift meant developers could write smart contracts to do almost anything, but there was a big limitation, they could only use data that was available on the chain. Blockchains at the time were designed to be independent.
 
-Problems like the absence of a source of true randomness(some dev tried finding ways around it, but most were vulnerable to exploits) and others popped up. They were left to use data from the chain. Some beautiful things happened in the space even with these limitations. Tokens became a thing, Fungible Tokens following the ERC-20 standards, Non-Fungible Tokens following ERC-721, etcetera. Decentralized exchanges came alive using Automated Market Makers, instead of order books(this enabled users to exchange their tokens), there were automated IEOs(Initial Exchange Offerings) and other creative innovations with smart contracts and on-chain data. There was more that could happen if there was a way for developers to get access to external data. Then this happened, Oracle came to the aid of mortal developers.
+Problems like the absence of a source of true randomness(some dev tried finding ways around it, but most were vulnerable to exploits) and others popped up. They were left to use data from the chain. Some beautiful things happened in the space even with these limitations. Tokens became a thing, Fungible Tokens following the ERC-20 standards, Non-Fungible Tokens following ERC-721, etcetera. Decentralized exchanges came alive using Automated Market Makers, instead of order books(this enabled users to exchange their tokens), there were automated IEOs(Initial Exchange Offerings) and other creative innovations with smart contracts and on-chain data. There was more that could happen if there was a way for developers to get access to external data. Then this happened, and Oracles came to the aid of mortal developers.
 
 In essence, off-chain data brings a whole new range of possibilities to writing smart contracts. Oracles came around and it became possible to write Insurance smart contracts that settled individuals based on what happens in the outside world, betting on sports became a thing, and true randomness could now be gotten and used in games and programs like random NFT purchases, gambling(flipping a coin or dice on the chain), etcetera. One other important thing is that oracles also give smart contracts the ability to call APIs in the regular web2 world.
 
@@ -67,7 +68,7 @@ Hey! easy, oracle developers have had those same thoughts and worries too. Almos
 
 Oracles work almost the same way smart contracts do, they can talk to other smart contracts, they can be interacted with via their address and other contracts can place listeners to know when an event occurs or changes. One big difference between a regular smart contract and an Oracle is that it has a component that lets it talk to the outside world. In the case of Ethereum, it talks via JSON-RPC ( a communications protocol for Ethereum blockchain nodes).
 
-To complete the communication channel, there is a system on the outside world that collects all real world data in a decentralized manner as we earlier discussed, and on a request, passes the data from the off-chain systems onto the listening smart contract on the blockchain network. Other smart contracts would then reach out to that smart contract to request and use its data at a fee. Examples of Oracle service providers include::
+To complete the communication channel, there is a system on the outside world that collects all real-world data in a decentralized manner as we earlier discussed, and on a request, passes the data from the off-chain systems onto the listening smart contract on the blockchain network. Other smart contracts would then reach out to that smart contract to request and use its data at a fee. Examples of Oracle service providers include::
 
 * [Chainlink](https://chain.link/)
     
@@ -86,7 +87,7 @@ In summary, an oracle is a tool(the smart contract and the external data aggrega
 
 Due to the nature of the JSON-RPC commonly used by nodes to communicate, this means communication could go in two ways, into the blockchain network or out of the network, creating a range of possibilities.
 
-* **Input/Inbound Oracles** :&gt;&gt; This type of oracle transmit data from external sources(real-world) into the chain, it's the most common way oracles are used.
+* **Input/Inbound Oracles** :&gt;&gt; This type of oracle transmits data from external sources(real-world) into the chain, it's the most common way oracles are used.
     
 * **Output/Outbound Oracles** :&gt;&gt; Data or commands are sent out, to real word systems( a listening computer ), which on receiving the data or command, triggers it to take an action. One example of such would be sending a command with data for a task that would be too computationally expensive to do on-chain, the result is later fed back on-chain after processing.
     
