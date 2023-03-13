@@ -2,7 +2,7 @@
 title: "Automating file re-organization on Windows with NodeJS"
 datePublished: Sun Mar 12 2023 22:55:07 GMT+0000 (Coordinated Universal Time)
 cuid: clf5zu7k3000009k01hpz8cgv
-slug: automating-file-re-organization-on-windows-with-nodejs
+slug: automating-file-reorg-with-nodejs
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1678459732167/4ab48d91-fb5e-40cd-a4f0-a544ea81165e.png
 tags: operating-system, nodejs, automation, windows, scripting
 
