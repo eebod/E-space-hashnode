@@ -18,11 +18,11 @@ Each screenshot captured on Windows is named in the format &gt;&gt; ( Screenshot
 
 '**Screenshot**' describes how the image is taken, '**.png**' is the file format the image is saved in, and '**number**' is a variable that gets incremented with every new screenshot. The very first time you take a screenshot on windows, that first picture is stored as 'screenshot (1).png', and that number (1) is stored in Window's registry. The next time you take another screenshot, it pulls the last value saved in the registry, adds one(1) to it and names the new screenshot with that value. That would mean the next screenshot saved after the first image would be saved as 'screenshot (2).png'.
 
-The issue I had, was with the numbering process. It only goes up and never adjusts to take account of deleted images or a change in the file numbering. It just keeps incrementing the last saved number in the screenshot counter registry and naming new files with that value.
+The issue I have is with the numbering process. It only goes up and never adjusts to take account of deleted images or a change in the file numbering. It continuously increments the last saved number in the screenshot counter registry and names new files with that value.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678465854077/0621d7cf-935c-415d-92ca-c77833371e21.png align="center")
 
-Taking a look at the image above in the screenshot folder, you would find examples of my earlier complaints regarding discrepancies with the file naming/numbering. We'll be fixing that with the script later in this article, to re-order the files in numerical descending order and update Windows' registry on the new screenshot file numbers.
+Taking a look at the image above in the screenshot folder, you would find examples of my earlier complaints regarding discrepancies with the file naming/numbering. We'll be fixing that with our NodeJS script later in this article. The script would to rename and rearrange the screenshot files in numerical descending order and thereafter update Windows' registry with the new screenshot file numbers.
 
 You might say, but that's not a big deal, and I could live with that and you'll be very right, millions of Windows users do and it in no way hinders how they use their machine. But unfortunately, I have been bestowed the power to write codes and make things conform, and I would love to use this power at this junction.
 
@@ -42,10 +42,10 @@ The script I'll be writing would do three main things:
 * Lastly, talk to Windows' registry to update the screenshot counter index with the new numbers of files in the screenshot folder.
     
 
-To make things easily accessible, the javascript file would be in the same directory as the screenshot folder, and to also speed up execution time, there would be a 'sleight-of-hand' approach to run commands from Windows' search bar, shown later at the end.
+To make things easily accessible, the javascript file would be in the same directory as the screenshot folder, and to also speed up execution time, there would be a 'sleight-of-hand' approach to run commands from Windows' search bar, shown later in the article.
 
 **\- REQUIREMENTS**  
-In this article, I'll be using Node.js on a Windows machine to do the reorganization and renaming of files. Node.js is a popular tool for building server-side applications and also provides several useful modules for working with the file system. To follow along, you would need :
+In this article, I'll be using Node.js on a Windows machine. Node.js is a popular tool for building server-side applications and also provides several useful modules for working with the file system. To follow along, you would need :
 
 * A computer
     
@@ -95,13 +95,13 @@ Before we get into writing the code fully, we can make some changes to the file 
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678717746641/96e9be51-3959-4af0-af41-257fec8e0bbc.png align="center")
 
-Three main changes :
+Three main changes were done to :
 
-* Created the javascript file where all the code would be written in, named it 're-order.js'.
+* Create the javascript file where all the code would be written in, its named 're-order.js'.
     
-* Created a folder('src') to put the JS file into, for a level of organization.
+* Create a folder('src') to put the JS file into, for a level of organization.
     
-* Updated the 'scripts' object in the package.json file, to point npm at the javascript file just created. This makes it easier to run the code, rather than having to always type '**node re-order.js**' and having to keep track of the name and the folder you're in, you could just use '**npm start**' and let npm handle the rest.
+* Update the 'scripts' object in the package.json file, to point npm at the javascript file just created. This makes it easier to run the code, rather than having to always type '**node re-order.js**' and having to keep track of the name and the folder you're in, you could just use '**npm start**' and let npm handle the rest.
     
 
 We're good to commence writing the code now. As you observed, there is also a **node\_modules** folder in the structure now, that's where the 'regedit' module we downloaded earlier is stored and also where any future module installed would be saved.
@@ -266,7 +266,7 @@ regedit.list([keyPath], (err, result) => {
 });
 ```
 
-This is the final continuation of the Node.js, this code updates the Windows registry with the latest screenshot index(What we got when we counted the screenshot files).
+This final section of the code updates the Windows registry with the latest screenshot index(Gotten from counting the screenshot files).
 
 Here's a breakdown of the code:
 
@@ -280,8 +280,6 @@ Here's a breakdown of the code:
     
 * `console.log(`\\nRegistry Screenshot counter value updated from ${previousValue}, to a New value of ${newValue}.\\n`);`: This line logs a message to the console to indicate that the registry update is complete and to display the previous and new screenshot index values.
     
-
-This is the final section of the code. It talks to Windows registry to read the previous value and then updates it with the new value gotten in re-organizing the folder.
 
 **ALL THE CODE**
 
@@ -432,12 +430,12 @@ Select the option to hide folders and files in the folder.
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678669249695/2a60fbdc-479f-4615-9fa5-ce69dfefa36a.png align="center")
 
 (⬆️) The folder becomes **INVISIBLE**..  
-To see the folder, use the **view** option in windows to see hidden items, and you can follow the process backwards to unhide the folder.
+To see the folder, use the **view** option in windows to see hidden items, and you can follow the process backward to unhide the folder.
 
 ---
 
+This brings us to the end of the article, thanks for your time. If you tried it out on your machine and have any questions, issues or an improvement to the code, feel free to throw them over in the comments section.
+
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678669579432/ef00e04a-bac9-4f4c-8415-3b36049a93b2.gif align="center")
 
-That brings us to the end of the article, thanks for your time. If you tried it out on your machine and have any questions, issues or an improvement to the code, feel free to throw them over in the comments section..
-
-Thank You.
+Thank You..
