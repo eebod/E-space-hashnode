@@ -93,7 +93,7 @@ npm install regedit
 
 Before we get into writing the code fully, we can make some changes to the file structure and the 'package.json', file to speed the code execution process and add some level of organization.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678620318918/1a1bf0f1-effd-4789-b9dc-7a59f088fec6.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678717746641/96e9be51-3959-4af0-af41-257fec8e0bbc.png align="center")
 
 Three main changes :
 
@@ -362,12 +362,11 @@ fs.readdir(screenshotFolder, (err, files) => {
   });
 ```
 
-For access to the full code, you can check out the repo [here](https://github.com/eebod/Article-Repo-House/tree/main/%5B1%5D%20Screenshot%20file%20re-org%20nodeJS%20code/re-order) on GitHub.
+For access to the full code, you can check out the repo [here](https://github.com/eebod/Article-Repo-House/tree/main/%5B1%5D%20re-order) on GitHub.
 
 If you find any bug or have an improvement, you can fork the code on the repo and make a Pull Request with your changes, I would follow up.
 
-**THE EXECUTION**
-
+**THE EXECUTION**  
 To execute the code, if you followed the file structuring used earlier, you can use the command :
 
 ```plaintext
@@ -422,18 +421,18 @@ To make the folder not get in the way of your pictures, we can use the Windows f
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678669065449/376cb5d0-4bfd-44d9-b27f-a1c442fdccf5.png align="center")
 
-Right Click on the folder to open the context menu and click on **'**`Properties'` . ⬆️..
+(⬆️) Right Click on the folder to open the context menu and click on **'**`Properties'` .
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678669154940/49e9d363-6941-4bf2-8c74-7d7594651ba1.png align="center")
 
-Tick the '`Hidden`' box option and click '`Apply`', to make the folder hidden.. ⬆️..
+(⬆️) Tick the '`Hidden`' box option and click '`Apply`', to make the folder hidden.
 
 Select the option to hide folders and files in the folder.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678669249695/2a60fbdc-479f-4615-9fa5-ce69dfefa36a.png align="center")
 
-The folder becomes **INVISIBLE**..  
-To see the folder, use the view option in windows to see hidden items, and you can follow the process backwards to unhide the folder.
+(⬆️) The folder becomes **INVISIBLE**..  
+To see the folder, use the **view** option in windows to see hidden items, and you can follow the process backwards to unhide the folder.
 
 ---
 
