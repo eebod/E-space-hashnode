@@ -8,46 +8,50 @@ tags: operating-system, nodejs, automation, windows, scripting
 
 ---
 
-I dual boot, which means I run two operating systems on my personal computer. I use Microsoft Windows operating system as my personal use OS and Linux Mint distro as my code-writing environment. Linux Mint, which is an Ubuntu-based Linux distribution allows me to tinker and play around with everything and anything on the OS, without fear of losing personal files.
+I dual boot, which means I run two operating systems on my personal computer. I use Microsoft Windows operating system as my personal use OS and Linux Mint distro as my code-writing environment. Linux Mint, an Ubuntu-based Linux distribution allows me to tinker around with anything and everything on the OS, without fear of losing personal files.
 
-While on Windows, I tend to take a lot of screenshots using the (🪟 + PrtSc) command. I do this for very different reasons. Over time, I came to realize there was an issue with how Windows labeled each screenshot in the screenshot folder where it saved these images. For every screenshot taken on Windows, it is named in the format &gt;&gt;( Screenshot + (Number) + .png ).
+On Windows, I tend to take a lot of screenshots using the (🪟 + PrtSc) command, I do this for very different reasons. Over time, I realized I had an issue with how Windows labeled each screenshot image file in the folder where it saved them.
+
+Each screenshot taken on Windows is named in the format &gt;&gt; ( Screenshot + (Number) + .png ).
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678463863528/b63f7a87-3011-4bb5-956d-ccb47ba8c761.png align="center")
 
-The '**Screenshot**' is a description of how the image was taken, '**.png**' is the file format the image is saved in, and '**number**' there is a variable that gets incremented. The very first time you take a screenshot on windows, that first picture is stored as 'screenshot (1).png' and that number is then stored in Window's registry, the next time you take another screenshot, it pulls the last value saved in the registry, adds one(1) to it and names the new screenshot with the new value. That would mean the next screenshot saved after the first image would be saved as 'screenshot (2).png'.
+'**Screenshot**' describes how the image is taken, '**.png**' is the file format the image is saved in, and '**number**' is a variable that gets incremented with every new screenshot. The very first time you take a screenshot on windows, that first picture is stored as 'screenshot (1).png', and that number (1) is stored in Window's registry. The next time you take another screenshot, it pulls the last value saved in the registry, adds one(1) to it and names the new screenshot with that value. That would mean the next screenshot saved after the first image would be saved as 'screenshot (2).png'.
 
-The issue with this approach is that the numbering only goes up and doesn't adjust to take account of deleted images or a change in the file numbering, It just keeps on adding one to the last number saved to name the new file ahead.
+The issue I had, was with the numbering process. It only goes up and never adjusts to take account of deleted images or a change in the file numbering. It just keeps incrementing the last saved number in the screenshot counter registry and naming new files with that value.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678465854077/0621d7cf-935c-415d-92ca-c77833371e21.png align="center")
 
-Taking a look at the image above, you would find discrepancies with the file naming/numbering in the screenshot folder, which is what we talked about and what we'll be fixing with the script I'll be writing later in this article.
+Taking a look at the image above in the screenshot folder, you would find examples of my earlier complaints regarding discrepancies with the file naming/numbering. We'll be fixing that with the script later in this article, to re-order the files in numerical descending order and update Windows' registry on the new screenshot file numbers.
 
-You might say, but that's not a big deal, I could live with that and you'll be very right, millions of Windows users do and it in no way hinders how they use their machine. But unfortunately, I have been bestowed the power to write codes and make things conform, and I would love to use this power at this junction.
+You might say, but that's not a big deal, and I could live with that and you'll be very right, millions of Windows users do and it in no way hinders how they use their machine. But unfortunately, I have been bestowed the power to write codes and make things conform, and I would love to use this power at this junction.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678466885239/3b8f39b6-8f3c-4bec-945f-2fb6f204518e.gif align="center")
 
-Another angle to this is that it's all a fun process of telling your machine what to do, when to, and just exactly how to do what you want. Let's get into business.
+Also, another angle to this is that it's a fun way of telling your machine what to do, when to, and just exactly how to do what you want. Now let's get into business.
 
 ## THE POWER IN CODE
 
-**GOAL**  
+**\- GOAL**  
 The script I'll be writing would do three main things:
 
 * Take a count of all the files(pictures) in the Screenshot Folder.
     
-* Start from the top and then rename them based on the number of files present.
+* Start from the top and then re-order and rename the files in descending order.
     
-* Lastly, it would talk to Windows' registry to update the number with the new values.
+* Lastly, talk to Windows' registry to update the screenshot counter index with the new numbers of files in the screenshot folder.
     
 
-To make the javascript file easily accessible, the file would be in the same directory as the screenshot folder, and to speed up execution time, there would be a 'sleight-of-hand' approach to run commands from Windows' search bar.
+To make things easily accessible, the javascript file would be in the same directory as the screenshot folder, and to also speed up execution time, there would be a 'sleight-of-hand' approach to run commands from Windows' search bar, shown later at the end.
 
-**REQUIREMENTS**  
-In this article, I'll be using Node.js on a Windows machine to reorganize and rename files. Node.js is a popular tool for building server-side applications and provides several useful modules for working with the file system.
+**\- REQUIREMENTS**  
+In this article, I'll be using Node.js on a Windows machine to do the reorganization and renaming of files. Node.js is a popular tool for building server-side applications and also provides several useful modules for working with the file system. To follow along, you would need :
 
-* Windows Operating System (Win-11, Win-10, Win-7, ...)
+* A computer
     
-* NodeJS (Version 18 upwards)
+* Windows Operating System (Win-11 or Win-10 or Win-8 or Win-7)
+    
+* NodeJS
     
 
 To Install nodeJS on your windows machine:
@@ -63,11 +67,11 @@ To Install nodeJS on your windows machine:
 
 ## Let's get Started
 
-**Navigate into the Screenshot folder to create a new folder to house the nodeJS project, in the image folder, I created the folder and named it 're-order'.**
+Navigate into the Screenshot folder to create a new folder to house the nodeJS project. For mine, I created a folder and named it 're-order' in the Screenshots directory.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678617074984/2c729387-3f84-4eba-bb91-4adf57019006.png align="center")
 
-Use the context menu on the folder to open it in your preferable code editor, I use **Windows VS Code.** Within VS Code, you can use a terminal, the terminal is where I would perform all nodeJS-required executions from.
+Use the context menu on the folder to open it in your preferable code editor, I use **Windows VS Code.** Within VS Code, you can use a terminal, the terminal is where I would perform all nodeJS-required executions..⬇️..
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678618026684/42b117d3-6d8f-4a03-adec-5b77ba98e9f2.png align="center")
 
@@ -77,32 +81,34 @@ To start a new NodeJS project, we need to initialize the project with the first 
 npm init -y
 ```
 
-the '**\-y'** flag is to fill in every requirement with a default value, so we don't have to manually do that, but if you want to, you can simply drop the -y flag and fill it in yourself. A 'package.json' file is created.
+the '**\-y'** flag is to fill in every requirement with default values, so we don't have to manually do that. If you want to, you can simply drop the -y flag and fill it in yourself. Once you're done, this process creates a 'package.json' file.
 
-The next thing would be to install the external dependencies needed, using npm. In this project, we would be mainly using the 'fs' and 'path' modules, which are built-in to nodeJS and don't need an install, but to talk to the Windows registry, we need an external package, '**regedit**'. To install 'regedit'.
+The next thing would be to install the required external dependencies using npm. In this project, we would be mainly using the 'fs' and 'path' modules, both of which are built-in to nodeJS and don't need an install, but to talk to Windows registry, we need an external package, '**regedit**'.
+
+To install 'regedit'.
 
 ```plaintext
 npm install regedit
 ```
 
-Before we get into writing the code fully, we can make some changes to the file structure and the 'package.json' file to speed up the writing and execution process.
+Before we get into writing the code fully, we can make some changes to the file structure and the 'package.json', file to speed the code execution process and add some level of organization.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678620318918/1a1bf0f1-effd-4789-b9dc-7a59f088fec6.png align="center")
 
 Three main changes :
 
-* Created the main javascript file where all the code would be written, named it 're-order.js'.
+* Created the javascript file where all the code would be written in, named it 're-order.js'.
     
 * Created a folder('src') to put the JS file into, for a level of organization.
     
-* Updated the 'scripts' object in the package.json file, to point npm at the javascript file just created in the 'start' field. This makes it easier to run the code, rather than having to always type '**node re-order.js**' and having to keep track of the name and the folder you're in, you could just use '**npm start**' in the root of the directory and let npm handle the rest.
+* Updated the 'scripts' object in the package.json file, to point npm at the javascript file just created. This makes it easier to run the code, rather than having to always type '**node re-order.js**' and having to keep track of the name and the folder you're in, you could just use '**npm start**' and let npm handle the rest.
     
 
-We're good to commence writing the code now. As you observed, there is a new **node\_modules** folder in the structure now, that's where the 'regedit' module we downloaded earlier is stored and also where any future module would be stored.
+We're good to commence writing the code now. As you observed, there is also a **node\_modules** folder in the structure now, that's where the 'regedit' module we downloaded earlier is stored and also where any future module installed would be saved.
 
 ### Writing the Code
 
-We can now head over to our r**e-order.js** file and make things happen. Earlier, we made three goals, the first being to '**take a count of all the files in the screenshot folder'**. Let's proceed.
+We can now head over to our r**e-order.js** file and make things happen in there. Earlier, we made three goals, the first being to '**take a count of all the files in the screenshot folder'**. Let's start there.
 
 **The imports and constants**
 
@@ -122,12 +128,14 @@ In the code body above, two main things are happening, first, is the import of m
 
 * `'fs'` : The 'fs' module short for fileSystem, is a built-in module in Node.js that provides an interface for working with the file system. It allows you to read, write, and manipulate files and directories on your computer or server.
     
-* `'path'` : The 'path' module in Node.js is a built-in module that provides utilities for working with file and directory paths. Update the 'path' value to point to your screenshot folder.
+* `'path'` : The 'path' module in Node.js is a built-in module that provides utilities for working with file and directory paths.
     
 * `'regedit'` : The 'regedit' npm module is a third-party package that provides a simple interface for working with the Windows registry in Node.js. The **Windows registry** is a database that stores configuration settings and options for the Windows operating system and other software applications.
     
 
-The next two lines are for constants that hold the path to the screenshot folders and also the keypath to the screenshot counter variable in Windows registry. At this stage, I would like to point out that it is a bad idea to play around with the files and configurations in Windows registry, but I have taken my time to ensure we are only reading and writing to the right files, and if you are uncomfortable doing that, you could just comment out the section in the code, I would leave a comment in the code for that.
+The next two lines are for constants that hold the path to the screenshot folders('remember to update yours to point to your screenshot folder') and also the keypath to the screenshot counter variable in Windows registry.
+
+⚠️ | At this stage, I would like to point out that it is a bad idea to play around with the files and configurations in Windows registry, but I have taken my time to ensure we are only reading and writing to the right files, and if you are uncomfortable doing that, you could just comment out the section in the code doing that. I would leave a comment in the code for that.
 
 **Reading files in the directory and filtering**
 
@@ -148,7 +156,9 @@ fs.readdir(screenshotFolder, (err, files) => {
 });
 ```
 
-This section of the code uses the `fs` module to read all the files in the screenshot directory specified by the `screenshotFolder` variable. It then filters the list of files to only include image files with the extensions ".png", ".jpg", or ".jpeg". In a normal scenario, we should only have '.png' files in the screenshot folder, but just in case, there is an imported image or something changes, to handle that, we're picking jpg, png and jpeg files and to also stop the code from picking up the re-order folder we created for the code. A more detailed breakdown of the code :
+This section of the code uses the `fs` module to read all the files in the screenshot directory specified by the `screenshotFolder` variable. It then filters the list of files to only include image files with the extensions ".png", ".jpg", or ".jpeg". In a normal scenario, we should only have '.png' files in the screenshot folder, but just in case, there is an imported image or something changes, to handle those cases, we're making room for possible jpg, png and jpeg files. This also stops the code from picking up the re-order folder we created for the code in the same screenshot folder.
+
+A more detailed breakdown of the code :
 
 * `fs.readdir(screenshotFolder, (err, files) => {...})`: This line reads the contents of the screenshot directory specified by the `screenshotFolder` variable and passes the result as an array of filenames to the callback function. If there is an error, the `err` argument will be set, and the error will be logged to the console.
     
@@ -166,7 +176,9 @@ imageFiles.sort((a, b) => {
 });
 ```
 
-This is a continuation of the previous code, here it sorts the list of image files obtained in the previous step (`imageFiles`) in numerical order based on their filenames. Here's a breakdown of the code:
+This is a continuation of the previous code, here it sorts the list of image files obtained in the previous step (`imageFiles`) in numerical order based on their filenames.
+
+A breakdown of the code:
 
 * `imageFiles.sort((a, b) => {...})`: This line calls the `sort()` method on the `imageFiles` array and passes a callback function as an argument. The callback function is used to compare two elements in the array and determine their sort order.
     
@@ -198,7 +210,9 @@ imageFiles.forEach((file, i) => {
 console.log(`Screenshots file(${imageFiles.length}) Re-organization complete.`)
 ```
 
-This also continues on the previous code, the file renaming happens here, this is the code breakdown:
+This also continues on the previous code, the file renaming happens here.
+
+The code breakdown:
 
 * `console.log('Screenshots file Re-organization started...')`: This line logs a message to the console to indicate that the file renaming process has started.
     
@@ -252,7 +266,9 @@ regedit.list([keyPath], (err, result) => {
 });
 ```
 
-This is the final continuation of the Node.js, this code updates the Windows registry with the latest screenshot index(What we got when we counted the screenshot files). Here's a breakdown of the code:
+This is the final continuation of the Node.js, this code updates the Windows registry with the latest screenshot index(What we got when we counted the screenshot files).
+
+Here's a breakdown of the code:
 
 * `regedit.list([keyPath], (err, result) => {...})`: This line uses the `regedit` package to list the values in the Windows registry key specified by the `keyPath` variable defined earlier in the code. The callback function receives an error object and the result object.
     
@@ -265,7 +281,7 @@ This is the final continuation of the Node.js, this code updates the Windows reg
 * `console.log(`\\nRegistry Screenshot counter value updated from ${previousValue}, to a New value of ${newValue}.\\n`);`: This line logs a message to the console to indicate that the registry update is complete and to display the previous and new screenshot index values.
     
 
-This is the final section of the code that talks to Windows registry to read the previous value and then update it with the new value gotten in re-organizing the folder.
+This is the final section of the code. It talks to Windows registry to read the previous value and then updates it with the new value gotten in re-organizing the folder.
 
 **ALL THE CODE**
 
@@ -348,7 +364,7 @@ fs.readdir(screenshotFolder, (err, files) => {
 
 For access to the full code, you can check out the repo [here](https://github.com/eebod/Article-Repo-House/tree/main/%5B1%5D%20Screenshot%20file%20re-org%20nodeJS%20code/re-order) on GitHub.
 
-If you find any bug or have an improvement, you can fork the code on the repo and make a Pull Request with your changes.
+If you find any bug or have an improvement, you can fork the code on the repo and make a Pull Request with your changes, I would follow up.
 
 **THE EXECUTION**
 
@@ -358,7 +374,7 @@ To execute the code, if you followed the file structuring used earlier, you can 
 npm start
 ```
 
-Or if not, but you're in the directory with the re-order.js file, you can then use the command:
+Or if not, but you're in the directory with the re-order.js file, you can use the command :
 
 ```plaintext
 node re-order.js
@@ -368,57 +384,61 @@ node re-order.js
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678667384388/b6a969e8-ec90-47c4-8dcd-87512afe1e2a.png align="center")
 
-This shows the code executed from within Microsoft VS Code.
+This shows the code executed from within Microsoft VS Code(Terminal).
 
 ### The Code Effect
 
-**\&gt;&gt; BEFORE :**
+**\- BEFORE : ⤵️**
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678667569705/8f740ac2-3de0-439f-b824-4615a64d5b8a.png align="center")
 
 This shows the screenshot folder is quite disorganized and badly labeled.
 
-**\&gt;&gt; AFTER :**
+**\- AFTER : ⤵️**
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678667666298/5ec29c43-4541-4f1f-a60a-fb4f143188fc.png align="center")
 
-We now have a well-organized folder. Also, because we updated the registry, the next screenshot we take would be named in continuation to where the last file stopped. In this case, the next screenshot would be named 'Screenshot (91).png'
+We now have a well-organized folder. Also, because we updated the registry, the next screenshot we take would be named in continuation from where the last file numbering stopped. In the case of the image above, the next screenshot file would be named 'Screenshot (91).png'
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678668075415/32041831-28d2-4517-b290-2e8eb73ee6be.gif align="center")
 
-Yep!! Mission is complete, we can still spice things up a little though.
+Yep!! The mission is complete, but sure, we can still spice things up a little.
 
-### The extras we talked about
+### The SPICING
 
-* **Speeding up Execution**
+* **Speed up Execution**
     
 
-To speed up how we execute the code, rather than having to always open VS code, we could instead and very simply execute it from our search bar context.
+To speed up how we execute the code, rather than having to always open VS code or a terminal to run the program from there, we could instead and very simply execute it from our search bar context.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678668617489/5434ce47-8d6f-49da-b44f-cf9f35fdb8a5.png align="center")
 
-If you remember how we structured our folder for the code, once you have nodeJS installed and set to path, all you just have to do is pretend like you want to search, but in this case, do a 'node' command followed by the relative path to the Javascript code, and that code would get run automatically. a search for \`node re-order/src/re-order.js\` followed by an enter does the trick in this case.
+If you remember how we structured our folder for the code, once you have nodeJS installed and set to path, all you just have to do is pretend like you want to search, but in this case, do a 'node' command followed by the relative path to the Javascript code, and that code would get executed. A search for `'node re-order/src/re-order.js'` followed by an enter does the trick in this case.
 
-* **Extra Magical Effect(make the folder hidden)**
+* **Extra Magical Effect(Folder hiding)**
     
 
-To make the folder not get in the way of your pictures, we can use the Windows folder context menu to hide the folder. To do that Image Instructions are below :
+To make the folder not get in the way of your pictures, we can use the Windows folder context menu to hide the folder. To do that, you can follow the Image directions below :
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678669065449/376cb5d0-4bfd-44d9-b27f-a1c442fdccf5.png align="center")
 
-Right Click on the folder to open the context menu and click on **properties**. ⬆️..
+Right Click on the folder to open the context menu and click on **'**`Properties'` . ⬆️..
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678669154940/49e9d363-6941-4bf2-8c74-7d7594651ba1.png align="center")
 
-Tick the Hidden box option, to make the folder hidden.. ⬆️.. Select the hide folder and files option..
+Tick the '`Hidden`' box option and click '`Apply`', to make the folder hidden.. ⬆️..
+
+Select the option to hide folders and files in the folder.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678669249695/2a60fbdc-479f-4615-9fa5-ce69dfefa36a.png align="center")
 
-The Folder becomes invisible..  
-To see the folder again, use the view option in windows to see hidden items.
+The folder becomes **INVINSIBLE**..  
+To see the folder, use the view option in windows to see hidden items, and you can follow the process backwards to unhide the folder.
 
 ---
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678669579432/ef00e04a-bac9-4f4c-8415-3b36049a93b2.gif align="center")
 
-That brings us to the end of the article, thanks for your time. If you tried it out on your machine and have any questions or issues, feel free to throw them over..
+That brings us to the end of the article, thanks for your time. If you tried it out on your machine and have any questions, issues or an improvement to the code, feel free to throw them over..
+
+Thank You.
