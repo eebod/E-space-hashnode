@@ -8,11 +8,11 @@ tags: operating-system, nodejs, automation, windows, scripting
 
 ---
 
-I dual boot, which means I run two operating systems on my personal computer. I use Microsoft Windows operating system as my personal use OS and Linux Mint distro as my code-writing environment. Linux Mint, an Ubuntu-based Linux distribution allows me to tinker around with anything and everything on the OS, without fear of losing personal files.
+I dual boot, which means I run two operating systems on my personal computer. I use Microsoft Windows operating system as my personal use OS and Linux Mint, an Ubuntu-based Linux distribution as my code-writing environment, which also allows me to tinker around with anything and everything on the OS, without fear of losing personal files.
 
-On Windows, I tend to take a lot of screenshots using the (🪟 + PrtSc) command, I do this for very different reasons. Over time, I realized I had an issue with how Windows labeled each screenshot image file in the folder where it saved them.
+On Windows, I tend to take a lot of screenshots using the (🪟 + PrtSc) command, I do this for very different reasons. Over time, I began to realize I had an issue with how Windows labeled each screenshot image file in the folder where they were saved.
 
-Each screenshot taken on Windows is named in the format &gt;&gt; ( Screenshot + (Number) + .png ).
+Each screenshot captured on Windows is named in the format &gt;&gt; ( Screenshot + (Number) + .png ).
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678463863528/b63f7a87-3011-4bb5-956d-ccb47ba8c761.png align="center")
 
@@ -415,7 +415,7 @@ To speed up how we execute the code, rather than having to always open VS code o
 
 If you remember how we structured our folder for the code, once you have nodeJS installed and set to path, all you just have to do is pretend like you want to search, but in this case, do a 'node' command followed by the relative path to the Javascript code, and that code would get executed. A search for `'node re-order/src/re-order.js'` followed by an enter does the trick in this case.
 
-* **Extra Magical Effect(Folder hiding)**
+* **Extra Effect(Folder hiding)**
     
 
 To make the folder not get in the way of your pictures, we can use the Windows folder context menu to hide the folder. To do that, you can follow the Image directions below :
@@ -432,13 +432,13 @@ Select the option to hide folders and files in the folder.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678669249695/2a60fbdc-479f-4615-9fa5-ce69dfefa36a.png align="center")
 
-The folder becomes **INVINSIBLE**..  
+The folder becomes **INVISIBLE**..  
 To see the folder, use the view option in windows to see hidden items, and you can follow the process backwards to unhide the folder.
 
 ---
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678669579432/ef00e04a-bac9-4f4c-8415-3b36049a93b2.gif align="center")
 
-That brings us to the end of the article, thanks for your time. If you tried it out on your machine and have any questions, issues or an improvement to the code, feel free to throw them over..
+That brings us to the end of the article, thanks for your time. If you tried it out on your machine and have any questions, issues or an improvement to the code, feel free to throw them over in the comments section..
 
 Thank You.
