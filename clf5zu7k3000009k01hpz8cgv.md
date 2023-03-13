@@ -122,7 +122,7 @@ In the code body above, two main things are happening, first, is the import of m
 
 * `'fs'` : The 'fs' module short for fileSystem, is a built-in module in Node.js that provides an interface for working with the file system. It allows you to read, write, and manipulate files and directories on your computer or server.
     
-* `'path'` : The 'path' module in Node.js is a built-in module that provides utilities for working with file and directory paths.
+* `'path'` : The 'path' module in Node.js is a built-in module that provides utilities for working with file and directory paths. Update the 'path' value to point to your screenshot folder.
     
 * `'regedit'` : The 'regedit' npm module is a third-party package that provides a simple interface for working with the Windows registry in Node.js. The **Windows registry** is a database that stores configuration settings and options for the Windows operating system and other software applications.
     
@@ -181,18 +181,21 @@ This is a continuation of the previous code, here it sorts the list of image fil
 
 ```javascript
 // Rename image files to have sequential filenames (starting from 1)
-    console.log('Screenshots file Re-organization started...')
-    imageFiles.forEach((file, i) => {
-        const oldPath = path.join(screenshotFolder, file);
-        const newPath = path.join(screenshotFolder, `Screenshot (${i + 1})${path.extname(file)}`);
-        fs.rename(oldPath, newPath, err => {
-            if (err) {
-                console.error(err);
-                return;
-            }
-        });
+console.log('Screenshots file Re-organization started...')
+imageFiles.forEach((file, i) => {
+  const oldPath = path.join(screenshotFolder, file);
+  const newPath = path.join(screenshotFolder, `Screenshot (${i + 1})${path.extname(file)}`);
+
+    fs.rename(oldPath, newPath, err => {
+        if (err) {
+            console.error(err);
+            return;
+        }
     });
-    console.log(`Screenshots file(${imageFiles.length}) Re-organization complete.`)
+    
+});
+
+console.log(`Screenshots file(${imageFiles.length}) Re-organization complete.`)
 ```
 
 This also continues on the previous code, the file renaming happens here, this is the code breakdown:
@@ -210,11 +213,105 @@ This also continues on the previous code, the file renaming happens here, this i
 * `console.log(`Screenshots file(${imageFiles.length}) Re-organization complete.`)`: This line logs a message to the console to show that the file renaming process is complete, along with the total number of files that were renamed.
     
 
-That's all for the screenshot files counting, sorting and renaming process, the first two set goals have been achieved. The last one to talk to the registry to update it with the files we counted in the screenshot folder is all that's left.
+That's all for the screenshot file counting, sorting and renaming process, the first two set goals have been achieved. The last one to talk to the registry to update it with the files we counted in the screenshot folder is all that's left.
 
 **Talking to Windows registry to read and update windows screenshot counter value**
 
 ```javascript
+//STOP HERE IF YOU DO NOT WANT TO TOUCH WINDOWS REGISTRY
+//REGISTRY UPDATE
+// Get the previous screenshot counter value from the registry
+regedit.list([keyPath], (err, result) => {
+  if (err) {
+     console.error(err);
+     return;
+ }
+
+    //Previous Screenshot Value
+    const previousValue = result[keyPath].values['ScreenshotIndex'].value;
+    //New Value from Directory scan 
+    const newValue      = imageFiles.length;
+
+    // Update the screenshot counter value in Windows' registry
+    regedit.putValue({
+        [keyPath]: {
+            'ScreenShotIndex': {
+                value: newValue,
+                type: 'REG_DWORD'
+             }
+         }
+        },(err) => {
+            if (err) {
+                console.error(err);
+                return;
+            }
+    
+    console.log(`\nRegistry Screenshot counter value updated from ${previousValue}, to a New value of ${newValue}.\n`);
+    });
+
+});
+```
+
+This is the final continuation of the Node.js, this code updates the Windows registry with the latest screenshot index(What we got when we counted the screenshot files). Here's a breakdown of the code:
+
+* `regedit.list([keyPath], (err, result) => {...})`: This line uses the `regedit` package to list the values in the Windows registry key specified by the `keyPath` variable defined earlier in the code. The callback function receives an error object and the result object.
+    
+* `const previousValue = result[keyPath].values['ScreenshotIndex'].value;` : This line extracts the previous screenshot index value in Windows registry from the `result` object. It does this by accessing the `value` property of the `ScreenshotIndex` value under the specified `keyPath`.
+    
+* `const newValue = imageFiles.length;`: This line sets the new screenshot index value to the length of the `imageFiles` array (that's the number of files in the screenshot directory).
+    
+* `regedit.putValue({...},(err) => {...})`: This line uses the `regedit` package to update the `ScreenshotIndex` value in the Windows registry with the new screenshot index value. It does this by calling the `putValue()` method with an object containing the new value, type, and registry key path. The callback function receives an error object.
+    
+* `console.log(`\\nRegistry Screenshot counter value updated from ${previousValue}, to a New value of ${newValue}.\\n`);`: This line logs a message to the console to indicate that the registry update is complete and to display the previous and new screenshot index values.
+    
+
+This is the final section of the code that talks to Windows registry to read the previous value and then update it with the new value gotten in re-organizing the folder.
+
+**ALL THE CODE**
+
+```javascript
+const fs        = require('fs');
+const path      = require('path');
+const regedit   = require('regedit');
+
+const screenshotFolder = 'C:\\Users\\Peter Ebode\\Pictures\\Screenshots'; //Path to screenshot folder
+const keyPath = 'HKCU\\SOFTWARE\\MICROSOFT\\Windows\\CurrentVersion\\Explorer'; //Registry key for screenshot counter
+
+// Read all files in screenshot folder
+fs.readdir(screenshotFolder, (err, files) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+  
+    // Filter only image files (png, jpg, jpeg)
+    const imageFiles = files.filter(file => {
+      const ext = path.extname(file).toLowerCase();
+      return ext === '.png' || ext === '.jpg' || ext === '.jpeg';
+    });
+
+    // Sort image files by filename (numeric order)
+    imageFiles.sort((a, b) => {
+        const aFile = parseInt(path.basename(a, path.extname(a)).match(/\d+/)[0]);
+        const bFile = parseInt(path.basename(b, path.extname(b)).match(/\d+/)[0]);
+        return aFile - bFile;
+    });
+
+    // Rename image files to have sequential filenames (starting from 1)
+    console.log('Screenshots file Re-organization started...')
+    imageFiles.forEach((file, i) => {
+        const oldPath = path.join(screenshotFolder, file);
+        const newPath = path.join(screenshotFolder, `Screenshot (${i + 1})${path.extname(file)}`);
+        fs.rename(oldPath, newPath, err => {
+            if (err) {
+                console.error(err);
+                return;
+            }
+        });
+    });
+    console.log(`Screenshots file(${imageFiles.length}) Re-organization complete.`)
+
+    //STOP HERE IF YOU DO NOT WANT TO TOUCH WINDOWS REGISTRY
     //REGISTRY UPDATE
     // Get the previous screenshot counter value from the registry
     regedit.list([keyPath], (err, result) => {
@@ -245,4 +342,83 @@ That's all for the screenshot files counting, sorting and renaming process, the 
         });
     
     });
+
+  });
 ```
+
+For access to the full code, you can check out the repo [here](https://github.com/eebod/Article-Repo-House/tree/main/%5B1%5D%20Screenshot%20file%20re-org%20nodeJS%20code/re-order) on GitHub.
+
+If you find any bug or have an improvement, you can fork the code on the repo and make a Pull Request with your changes.
+
+**THE EXECUTION**
+
+To execute the code, if you followed the file structuring used earlier, you can use the command :
+
+```plaintext
+npm start
+```
+
+Or if not, but you're in the directory with the re-order.js file, you can then use the command:
+
+```plaintext
+node re-order.js
+```
+
+**5,4,3,2,1, execute...**
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678667384388/b6a969e8-ec90-47c4-8dcd-87512afe1e2a.png align="center")
+
+This shows the code executed from within Microsoft VS Code.
+
+### The Code Effect
+
+**\&gt;&gt; BEFORE :**
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678667569705/8f740ac2-3de0-439f-b824-4615a64d5b8a.png align="center")
+
+This shows the screenshot folder is quite disorganized and badly labeled.
+
+**\&gt;&gt; AFTER :**
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678667666298/5ec29c43-4541-4f1f-a60a-fb4f143188fc.png align="center")
+
+We now have a well-organized folder. Also, because we updated the registry, the next screenshot we take would be named in continuation to where the last file stopped. In this case, the next screenshot would be named 'Screenshot (91).png'
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678668075415/32041831-28d2-4517-b290-2e8eb73ee6be.gif align="center")
+
+Yep!! Mission is complete, we can still spice things up a little though.
+
+### The extras we talked about
+
+* **Speeding up Execution**
+    
+
+To speed up how we execute the code, rather than having to always open VS code, we could instead and very simply execute it from our search bar context.
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678668617489/5434ce47-8d6f-49da-b44f-cf9f35fdb8a5.png align="center")
+
+If you remember how we structured our folder for the code, once you have nodeJS installed and set to path, all you just have to do is pretend like you want to search, but in this case, do a 'node' command followed by the relative path to the Javascript code, and that code would get run automatically. a search for \`node re-order/src/re-order.js\` followed by an enter does the trick in this case.
+
+* **Extra Magical Effect(make the folder hidden)**
+    
+
+To make the folder not get in the way of your pictures, we can use the Windows folder context menu to hide the folder. To do that Image Instructions are below :
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678669065449/376cb5d0-4bfd-44d9-b27f-a1c442fdccf5.png align="center")
+
+Right Click on the folder to open the context menu and click on **properties**. ⬆️..
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678669154940/49e9d363-6941-4bf2-8c74-7d7594651ba1.png align="center")
+
+Tick the Hidden box option, to make the folder hidden.. ⬆️.. Select the hide folder and files option..
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678669249695/2a60fbdc-479f-4615-9fa5-ce69dfefa36a.png align="center")
+
+The Folder becomes invisible..  
+To see the folder again, use the view option in windows to see hidden items.
+
+---
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678669579432/ef00e04a-bac9-4f4c-8415-3b36049a93b2.gif align="center")
+
+That brings us to the end of the article, thanks for your time. If you tried it out on your machine and have any questions or issues, feel free to throw them over..
