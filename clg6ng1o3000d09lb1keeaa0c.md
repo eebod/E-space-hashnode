@@ -16,9 +16,9 @@ Eventually, I decided to find out these answers myself, and in doing so, I reali
 
 At the end of this article, you should have an idea as to why internet access can't be free, at the moment at least, and the roles those tall giant masts you often see around, play in giving you access to mobile internet, sending and receiving SMS and making cellular voice calls.
 
-Sit tight and stare closely as I show you **MAGIC.**
+Sit tight and stare closely as I show you this **MAGIC.**
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680807320115/f9f8830f-7883-44a7-b215-23c8e89e9dd4.gif align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680879370068/ab179b3c-0d63-4e7f-a7eb-c9e34db8acb2.gif align="center")
 
 ## A TRIP INTO CONNECTION
 
@@ -151,9 +151,9 @@ So, yeah, without network masts, the majority of everyone wouldn't almost be abl
 
 **Then why do we pay for internet I still hear you ask?**
 
-If you didn't figure out that yet, yeah, let's talk about it. Earlier on we talked about network masts, first, those things are expensive to set up, getting a piece of land to set them on, the metal and the work to get them up, the cost of those antennas, radio unit, the cost of a backhaul if it is used(having to dig the ground and lay cables to connect one mast to another), cost of cables, costs of generators, the cost of fueling, they need to put someone on salary to constantly monitor the premise, cause while writing this article, I came across news article where guys randomly walk into a network mast premise, steal diesel and use it buy pepper soup to calm down for the evening, and that's just on the light side of the vandalism, they also have to pay engineers to manage the hardware and software sides. Add that all up and multiply it across all the network masts you see around and you can very quickly see how the cost is running.
+If you didn't figure out that yet, yeah, let's talk about it. Earlier on we talked about network masts, first, those things are expensive to set up, getting a piece of land to set them on, the structure and the work to get them up, the cost of the antennas, radio unit, the cost of a backhaul if it is used(having to dig the ground and lay cables to connect one mast to another), cost of cables, costs of generators, the cost of fueling, they need to put someone on salary to constantly monitor the premise. While writing this article, I came across news article where guys randomly walk into a network mast premise, steal diesel, and use the proceed from the crime sales to buy pepper soup to calm down for the evening, and that's just on the light side of the vandalism, it gets worse. They also have to pay engineers to manage the hardware and software sides of everything. Add that all up and multiply it across all the network masts you see around and you can very quickly see how cost runs.
 
-One more thing, Companies like MTN don't also wire straight into the internet, they have to connect to other ISPs, it's a hierarchical order of connection, and there are tiers :
+One other thing, companies like MTN don't also connect directly into the internet, they have to connect to other ISPs for service, it's a hierarchical order of connection, and there are tiers to this:
 
 **Tier-1:** these are the largest and most interconnected networks in the world. They have direct connections to all other Tier 1 ISPs, as well as to many smaller ISPs and content providers.
 
@@ -161,7 +161,7 @@ One more thing, Companies like MTN don't also wire straight into the internet, t
 
 **Tier-3:** these are local or regional networks that connect to Tier 1 or Tier 2 ISPs to access the wider internet. They may provide services to residential or business customers or may serve as backhaul providers for smaller ISPs.
 
-In the case of MTN, in Nigeria, it is regarded as a Tier-1 based on its deep network coverage and infrastructural size, in the same space as Globacom and Airtel, but on the global scale, MTN still needs to reach out to other ISPs to pull data off, they pay to do so too. So yeah, asides from staff salary and profits, there is a lot of running cost, but yeah, these companies are also very profitable.
+In the case of MTN in Nigeria, it is regarded as being on a Tier-1 ,based on its deep network coverage and infrastructural size, it is in the same space as Globacom and Airtel, but on the global scale, MTN still needs to reach out to other ISPs to pull data off, they pay to do so too. So yeah, asides staff salary and profits, there is a lot of running cost. You should now see why getting free internet isn't sustainable.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680864966845/442d0907-38b9-4537-8071-ba6084828b46.gif align="center")
 
