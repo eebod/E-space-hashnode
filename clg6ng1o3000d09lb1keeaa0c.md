@@ -3,7 +3,7 @@ title: "How Network Masts work"
 datePublished: Fri Apr 07 2023 14:35:40 GMT+0000 (Coordinated Universal Time)
 cuid: clg6ng1o3000d09lb1keeaa0c
 slug: how-network-masts-work
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1680806059221/d7f2ef89-bada-4295-9456-2fe741cae26d.png
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1680879826809/c10ba7c7-9a3f-4bff-b351-12b0da95a651.png
 tags: network, radio, networking, wireless-internet-service-providers-in-nigeria, network-mast
 
 ---
