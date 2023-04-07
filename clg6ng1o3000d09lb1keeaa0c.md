@@ -10,7 +10,7 @@ tags: network, radio, networking, wireless-internet-service-providers-in-nigeria
 
 > **Any sufficiently advanced technology is indistinguishable from magic.**
 
-I have always been very fascinated with how the internet feels so abstract and is yet so real. How do Internet Service Providers like MTN, Airtel, GLO, etcetera (in Nigeria), give me access to the Internet over thin air, and I have to give them my physical cash? Why do they even charge for it? How do my calls and SMS texts reach the person for them? These are questions I asked as I was growing up, but no one around me could answer.
+I have always been very fascinated with how the internet feels so abstract and is yet so real. How do Internet Service Providers like MTN, Airtel, GLO, etcetera (in Nigeria), give me access to the Internet over thin air, and I have to give them my money? Why do they even charge for it? How do my calls and SMS texts reach the intended person? These are questions I asked as I was growing up, but no one around me could answer.
 
 Eventually, I decided to find out these answers myself, and in doing so, I realized things were deeper and sorta more mysterious than they seemed on the surface.
 
