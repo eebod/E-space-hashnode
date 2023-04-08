@@ -41,8 +41,8 @@ In my search for information on network masts, I saw a detailed page from [Vodaf
     
 2. #### Radio unit
     
-    The radio unit generates the radio waves transmitted by the antennas. It is responsible for converting signals between the wireless device(your phones. etc) and the network, amplifying the signal, and transmitting it to the base station. Similarly, it receives signals from the base station and converts them into a form that can be transmitted wirelessly to the wireless device.  
-      
+    The radio unit generates the radio waves transmitted by the antennas. It is responsible for converting signals between the wireless device(your phones. etc) and the network, amplifying the signal, and transmitting it to the base station. Similarly, it receives signals from the base station and converts them into a form that can be transmitted wirelessly to the wireless device.
+    
     A base station is equipment that is always within a network mast or sometimes between network masts, It acts as a hub that manages communication between wireless devices and the network and also provides authentication and security for the wireless connection.
     
 3. #### Transmission/backhaul
@@ -180,7 +180,7 @@ A clearer image should have appeared by now, as to how much it costs to start an
 
 This is why we pay to use the internet, pay for airtime to make calls and send SMS.
 
-**FunFact:** It is called **airtime** because when you make a voice call, use the internet or take a call, your phone uses radio waves to communicate with the cellular network over the air, and how long you can do that 'time' is based on how much you pay.|😌
+**FunFact:** It is called **airtime** because when you make a voice call, use the internet or take a call, your phone uses radio waves to communicate with the cellular network over the air. How long you can do that, the 'time' is based on how much you pay. |😌
 
 If you read it all to this point, thank you..💪🏾..
 
