@@ -180,7 +180,7 @@ A clearer image should have appeared by now, as to how much it costs to start an
 
 This is why we pay to use the internet, pay for airtime to make calls and send SMS.
 
-**FunFact:** It is called **airtime** because when you make a voice call, use the internet or take a call, your phone uses radio waves to communicate with the cellular network over the air. How long you can do that, the 'time' is based on how much you pay. |😌|
+**FunFact:** It is called **airtime** because when you make a voice call, use the internet or take a call, your phone uses radio waves to communicate with the cellular network over the **'air'**. How long you can do that, the **'time'** is based on how much you pay. |😌|
 
 If you read it all to this point, thank you..💪🏾..
 
