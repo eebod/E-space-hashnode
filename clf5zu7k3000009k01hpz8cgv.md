@@ -24,11 +24,11 @@ Now herein lies the issue. The numbering process by Windows for naming the file 
 
 Taking a look at the image above in the screenshot folder, you would find examples of my earlier complaints regarding discrepancies with the file naming/numbering. We'll be fixing that with our NodeJS script later in this article. The script would be to rename and rearrange the screenshot files in numerical descending order and thereafter update Windows' registry with the new screenshot file numbers.
 
-You might say, but that's not a big deal, and I could live with that and you'll be very right, millions of Windows users do and it in no way hinders how they use their machine. But unfortunately, I have been bestowed the power to write codes and make things conform, and I would love to use this power at this junction.
+You might say, but that's not a big deal, and you could live with just how Windows handles naming your screenshot files, and you'll be very right. Millions of Windows users do these and it in no way hinders how they use their machine. But unfortunately, I have been bestowed the power to write codes and make things conform, and I would love to use this power at this junction.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678466885239/3b8f39b6-8f3c-4bec-945f-2fb6f204518e.gif align="center")
 
-Also, another angle to this is that it's a fun way of telling your machine what to do, when to, and just exactly how to do what you want. Now let's get into business.
+Also, another angle to this is that it's a fun way of telling your machine what to do, when to, and just exactly how to do what you want. Now let's get to business.
 
 ## THE POWER IN CODE
 
