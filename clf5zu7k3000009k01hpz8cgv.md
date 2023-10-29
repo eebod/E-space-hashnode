@@ -18,11 +18,11 @@ Each screenshot captured on Windows is named in the format &gt;&gt; ( Screenshot
 
 '**Screenshot**' describes how the image is taken, '**.png**' is the file format the image is saved in, and '**number**' is a variable that gets incremented with every new screenshot. The very first time you take a screenshot on windows, that first picture is stored as 'screenshot (1).png', and that number (1) is stored in Window's registry. The next time you take another screenshot, it pulls the last value saved in the registry, adds one(1) to it and names the new screenshot with that value. That would mean the next screenshot saved after the first image would be saved as 'screenshot (2).png'.
 
-The issue I have is with the numbering process. It only goes up and never adjusts to take account of deleted images or a change in the file numbering. It continuously increments the last saved number in the screenshot counter registry and names new files with that value.
+Now herein lies the issue. The numbering process by Windows for naming the file only goes up and never adjusts to take account of deleted images or a change in the file numbering/number of files in the screenshot folder. It continuously increments the last saved number in the screenshot counter registry and names new files with that value forever!
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678465854077/0621d7cf-935c-415d-92ca-c77833371e21.png align="center")
 
-Taking a look at the image above in the screenshot folder, you would find examples of my earlier complaints regarding discrepancies with the file naming/numbering. We'll be fixing that with our NodeJS script later in this article. The script would to rename and rearrange the screenshot files in numerical descending order and thereafter update Windows' registry with the new screenshot file numbers.
+Taking a look at the image above in the screenshot folder, you would find examples of my earlier complaints regarding discrepancies with the file naming/numbering. We'll be fixing that with our NodeJS script later in this article. The script would be to rename and rearrange the screenshot files in numerical descending order and thereafter update Windows' registry with the new screenshot file numbers.
 
 You might say, but that's not a big deal, and I could live with that and you'll be very right, millions of Windows users do and it in no way hinders how they use their machine. But unfortunately, I have been bestowed the power to write codes and make things conform, and I would love to use this power at this junction.
 
