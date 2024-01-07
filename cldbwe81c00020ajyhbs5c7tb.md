@@ -1,5 +1,5 @@
 ---
-title: "Whatsapp's Image and Video quality reduction"
+title: "Why Whatsapp reduces Image and Video quality"
 datePublished: Wed Jan 25 2023 16:45:55 GMT+0000 (Coordinated Universal Time)
 cuid: cldbwe81c00020ajyhbs5c7tb
 slug: whatsapp-quality-reduction
