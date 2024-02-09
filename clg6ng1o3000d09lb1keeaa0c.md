@@ -11,25 +11,27 @@ tags: network, radio, networking, wireless-internet-service-providers-in-nigeria
 > **Any sufficiently advanced technology is indistinguishable from magic.**  
 > \- Arthur C. Clarke
 
-I have always been very fascinated with how the internet feels so abstract and is yet so real. How do Internet Service Providers like MTN, Airtel, GLO, etcetera (in Nigeria), give me access to the Internet over thin air, and I have to pay? Why do they even charge for it? How do my calls and SMS texts reach the intended person? These are questions I asked as I was growing up, but no one around me could answer back then.
+I have always been very fascinated with how the internet feels so abstract and is yet so real. How do network providers like MTN, Airtel, GLO, etcetera (in Nigeria), give me access to the Internet over thin air? How do my calls and SMS texts reach the intended person? And more importantly why couldn't all of these be free? These were questions I asked as I was growing up.
 
-I eventually decided to find out these answers myself, and in doing so, I realized things were deeper and more complex than they seemed on the surface.
+I eventually decided to find out these answers myself, and in doing so, I realized things were bigger and not as simple as they seemed on the surface.
 
-At the end of this article, you should have an idea as to why internet access can't be free, at least, for the moment, and the role the tall giant masts we often see around, play in giving access to mobile internet, sending and receiving SMS and making cellular voice calls.
+At the end of this article, you should have an idea as to why internet access can't be free, at least for the moment, and the roles those tall giant masts we often see around play in giving us access to mobile internet, sending and receiving SMS and making cellular voice calls.
 
-Sit tight and stare closely as I show you this **MAGIC.**
+Sit tight and stare closely as I unravel this **MAGIC.**
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680879370068/ab179b3c-0d63-4e7f-a7eb-c9e34db8acb2.gif align="center")
 
 ## A TRIP INTO CONNECTION
 
-The very first question that popped into my mind back then, was how the heck were calls able to go from one phone to another? They were the days I had fun playing Bounce and Snake Xenxia on these old phones. Unfortunately, google wasn't easily accessible then and even when I did get access to the search engine, I had more sinister(😈) things to do. Fast forward to some years back and I intentionally began to source answers, sharing what I found is happening now.
+The very first question that popped into my mind back then, was how the heck were calls able to go from one phone to another? These were the days I had fun playing Bounce and Snake Xenxia on these old phones. Unfortunately, Google wasn't easily accessible back then and even when I did get some access to the search engine, I had more sinister(😈) things to do and almost usually had forgotten. Fast forward to some years back and I intentionally began to find answers to these questions. This article is a testament to the fact that I eventually found those answers.
 
 ### Let's dissect a network mast
 
-A network mast is a tall structure, sometimes it might stand alone, something similar to the image that comes below or in some cases, a tall tree, a part of a tall building or just anything high enough that can carry communication components like a radio unit, antenna, and other equipment used in telecommunications, without obstruction, to both transmit and receive wireless signals. It's simply a structure put in place by Internet service providers, that can talk to our phones and other wireless devices and provide a network connection.
+A network mast is a tall structure, sometimes it might stand alone, in some cases it might be part of a tall tree, a tall building or just anything strong enough to carry communication components like a radio unit, antenna, or any other equipment used in telecommunications, and also it has to be tall enough to have minimum obstruction from buildings. All these so it can easily transmit and receive wireless signals from and to all devices than needs it.
 
-In my search for information on network masts, I saw a detailed page from [Vodafone](https://www.vodafone.co.uk/) on network mast components. I will simply expand and summarise that in this section. I would also leave a reference to the main content at the end.
+In other words, it's simply a structure put in place by network service providers, that talk to our phones and other wireless devices to create a network connection for sharing files and communication.
+
+In my search, one of the things I found was a detailed page from [Vodafone](https://www.vodafone.co.uk/network/network-improvements) on network mast components and what each did. Rather than re-invent any wheel, I would simply give a summary of that article here, before we continue on our learning journey. A reference to the article would also be attached below.
 
 ### What makes up a network mast
 
@@ -41,13 +43,13 @@ In my search for information on network masts, I saw a detailed page from [Vodaf
     
 2. #### Radio unit
     
-    The radio unit generates the radio waves transmitted by the antennas. It is responsible for converting signals between the wireless device(your phones. etc) and the network, amplifying the signal, and transmitting it to the base station. Similarly, it receives signals from the base station and converts them into a form that can be transmitted wirelessly to the wireless device.
+    The radio unit generates the radio waves transmitted by the antennas. It is responsible for converting signals between the wireless devices(your phones. etc) and the network, amplifying the signal, and transmitting it to the base station. Similarly, it receives signals from the **base station** and converts them into a form that can be transmitted wirelessly to devices.
     
-    A base station is equipment that is always within a network mast or sometimes between network masts, It acts as a hub that manages communication between wireless devices and the network and also provides authentication and security for the wireless connection.
+    A **base station** is equipment typically located within or near a network mast, serving as a central hub that manages communication between wireless devices and the network. Additionally, it provides authentication and security for wireless connections.
     
 3. #### Transmission/backhaul
     
-    Cables, traditionally copper but now far more likely to be fiber optic, are used to connect one mast with other masts within the network. They are usually buried in the ground. In a few cases, a microwave dish is used instead.
+    Cables, traditionally copper but now far more likely to be fiber optic, are used to connect one mast with other masts within the network. They are usually buried in the ground, and a few of us have likely seen cables being layed close to the road, buried in the ground and not understanding what's happening, this is one explanation to that. In a few cases where it is not feasible to use cables laid in the ground, a microwave dish is used instead. These dishes transmit data wirelessly over the air using microwaves.
     
 4. #### Cabin/cabinets
     
@@ -55,11 +57,11 @@ In my search for information on network masts, I saw a detailed page from [Vodaf
     
 5. #### Power
     
-    Most masts will draw their power from the National Grid (unfortunately, in Nigeria, our power grid collapses every market Friday😏); Instead, there is an extra power source on-site, mostly diesel generators.
+    Most masts will draw their power from the National Grid (unfortunately, in Nigeria, our power grid collapses every market Friday😏); Instead, in our case, there need to be an extra power source on-site, mostly diesel generators.
     
 6. #### Microwave dish
     
-    In some locations, such as remote rural areas, a microwave satellite dish is used instead of fiber optic cables to act as a transmission to connect the mast to the rest of the masts on the network. To do so, the dish must be within line of sight of a dish on another mast.
+    In some locations, such as remote rural areas, a microwave satellite dish is used instead of fiber optic cables to act as a transmission to connect the mast to the rest of the masts on the network. To do so, the dish must be within line of sight of a dish on another mast, this means, there can not be any obstructions like houses, trees, poles or anything between the communicating masts. This is the primary reason they are always very tall.
     
 
 The article from Vodafone is [here](https://www.vodafone.co.uk/newscentre/smart-living/everything-you-need-to-know-about/mobile-phone-masts-everything-you-need-to-know/).
