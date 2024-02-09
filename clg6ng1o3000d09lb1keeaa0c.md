@@ -43,13 +43,13 @@ In my search, one of the things I found was a detailed page from [Vodafone](http
     
 2. #### Radio unit
     
-    The radio unit generates the radio waves transmitted by the antennas. It is responsible for converting signals between the wireless devices(your phones. etc) and the network, amplifying the signal, and transmitting it to the base station. Similarly, it receives signals from the **base station** and converts them into a form that can be transmitted wirelessly to devices.
-    
-    A **base station** is equipment typically located within or near a network mast, serving as a central hub that manages communication between wireless devices and the network. Additionally, it provides authentication and security for wireless connections.
+    The radio unit generates the radio waves transmitted by the antennas. It is responsible for converting signals between the wireless devices(your phones. etc) and the network, amplifying the signal, and transmitting it to the base station. Similarly, it receives signals from the **base station** and converts them into a form that can be transmitted wirelessly to devices.  
+      
+    A **base station** is equipment typically located within or near a network mast, serving as a central hub that manages communication between wireless devices and the mast network. Additionally, it provides authentication and security for wireless connections.
     
 3. #### Transmission/backhaul
     
-    Cables, traditionally copper but now far more likely to be fiber optic, are used to connect one mast with other masts within the network. They are usually buried in the ground, and a few of us have likely seen cables being layed close to the road, buried in the ground and not understanding what's happening, this is one explanation to that. In a few cases where it is not feasible to use cables laid in the ground, a microwave dish is used instead. These dishes transmit data wirelessly over the air using microwaves.
+    Cables, traditionally copper but now far more likely to be fiber optic, are used to connect one mast with other masts within the network. They are usually buried in the ground, and a few of us have likely seen cables being layed close to the road, buried in the ground and not understanding what's happening, this is one explanation to that. In a few cases where it is not feasible to use cables laid in the ground, a microwave dish is used instead.
     
 4. #### Cabin/cabinets
     
@@ -61,7 +61,7 @@ In my search, one of the things I found was a detailed page from [Vodafone](http
     
 6. #### Microwave dish
     
-    In some locations, such as remote rural areas, a microwave satellite dish is used instead of fiber optic cables to act as a transmission to connect the mast to the rest of the masts on the network. To do so, the dish must be within line of sight of a dish on another mast, this means, there can not be any obstructions like houses, trees, poles or anything between the communicating masts. This is the primary reason they are always very tall.
+    In some locations, such as remote rural areas, a microwave satellite dish is used instead of fiber optic cables to act as a transmission to connect the mast to the rest of the masts on the network. These dishes transmit data wirelessly over the air using microwaves. To do so, the dish must be within line of sight of a dish on another mast, this means, there can not be any obstructions like houses, trees, poles or anything between the communicating masts. This is the primary reason they are always very tall.
     
 
 The article from Vodafone is [here](https://www.vodafone.co.uk/newscentre/smart-living/everything-you-need-to-know-about/mobile-phone-masts-everything-you-need-to-know/).
@@ -70,32 +70,36 @@ The article from Vodafone is [here](https://www.vodafone.co.uk/newscentre/smart-
 
 ### **How are Phone Calls Connected**?
 
-To answer this, first, you should know that your phone is almost always connected to the nearest network mast with the strongest network signal, depending on the network provider. It is why you have those small network bar(s) at the top of your phone, it shows how close you are to the mast and how strong the signal is. If you are in an area where your phone or device can't reach a network mast from your internet service provider, you get the 'No Signal' or 'No Network' message.
+To answer this, first, you should know that your phone is almost always connected to the nearest network mast with the strongest network signal close to you. This also depends on the network provider. It is why you have those small network bar(s) at the top of your phone, it shows how close you are to the mast and how strong the connection signal is. If you are in an area where your phone or device can't reach a network mast from your internet service provider, you get the 'No Signal' or 'No Network' network status.
 
-Also, every network mast out there is connected to another mast, either via cables or radio signals(wirelessly). You might not see it, but they are all talking to each other over long distances.
+Also, you need to know that every network mast out there is connected to another mast, either via cables or micro waves(wirelessly). You might not see it, but they are all connected and talking to each other over very large distances. Another crucial part of all this is the Mobile Switching Center(MSC), this is a central control point in the network, it manages call routings, connections between masts, billing, authentication, and overall network management tasks.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680809951556/587cc6e8-e269-452e-aef1-3d83710256ad.jpeg align="center")
 
-Back to the main question, how do calls go from one edge of the country to the other side? The very simple answer to this is, your call jumps from one mast to another till it reaches the person you're calling. If you are making a call from Abuja(NG) to someone in Lagos(NG), for both you and the caller, your calls pass through network masts between you and the individual. Your service providers like MTN, do something called routing, to make sure that the calls pass through the most efficient masts while this call is ongoing. Efficiency in the sense of making sure calls pass through masts that have lesser calls going through them at that moment, making sure calls take the shortest distance, avoiding faulty masts, and every other thing to make sure the quality of the call is very good.
+Back to the main question, how do calls go from one edge of the country to the other side and get to ?
 
-For a little more technical on how calls move, let's talk about the process:
+When you call a number, your device(smart-or-not phone) sends a request to the mast it is connected to as we mentioned earlier. That mast forwards that call to the nearest base station which checks that you have the correct permissions to make the call. When it is confirmed to not have an issue, the base station assigns the caller a frequency channel and then forwards that call to the Mobile Switching Center (MSC). The MSC does other checks too and if it passes, it goes ahead to determine the routing path for the call. A route is all the masts a call needs to pass through to get from your phone to the mast where the number you're calling is connected to. After finding the route, it directs the call through it. Once the call request reaches the mast connected to the number called, the mast sends the call notification to the device that has the number being called, prompting it to ring and alert the user of the incoming call.
 
-* **Initiating the Call:** When you start a call, your phone sends a radio signal to the nearest network mast it is connected to. The mast picks up the signal and sends it to the nearest base station.
+For a little more technical on how the calls move, let's highlight the main processes:
+
+* **Initiating the Call:** When you start a call, your phone sends a radio signal to the nearest network mast it is connected to. The mast picks up the signal and sends it to the nearest base station via wires or wirelessly with microwaves.
     
 * **Authentication:** The base station ensures your phone is allowed on the network, by asking for credentials from your sim card, it then assigns it a frequency channel and a time slot.
     
 * **Call Routing:** The base station sends the call to the mobile switching center (MSC), which is responsible for routing the call to its destination.
     
-    For example, MTN has numerous Mobile Switching Centers across the country, these control centers receive calls from the base station, find where the person the call is meant to get to is in the country, and how many masts to get to the nearest base station for that person, it then sends the call in that direction.
+    For example, MTN has numerous Mobile Switching Centers across the country, these control centers receive calls from the base station, find where the person the call is meant to get to is in the country, and how many masts to get to that person, it then sends the call in that direction.
     
 * **Mast Routing:** In this case, there are two main scenarios, one is if the individual being called is within the same mast range as the caller, then the call doesn't have to leave that mast, if not, the call hops from one mast to another as the MSC directs.
     
 * **Call Termination:** When the call is over, your phone sends a signal to the network indicating that the call has ended. The network releases the frequency channel and time slot assigned to your phone.
     
 
-The quality of the call is dependent on factors like signal strength, interference, and distance. If the signal is weak, the voice quality may be poor or the call may be dropped.
+The quality of a call is dependent on factors like signal strength(the distance between a phone and the closest mast), interference, and the route it takes. If the signal is weak, the voice quality may be poor or the call may be dropped.
 
-All of the above is what happens when you make a call from one phone number to another, it's also almost the same thing that happens when you send text messages too, SMS(Short Message Service) with some underlying protocol difference though. For Internet connection, it's also almost the same, but with some interesting touch of complexity, let's hop on those fun parts.
+All of the above is what happens when you make a call from one phone number to another, it's also almost the same thing that happens when a SMS(Short Message Service) is sent, with some underlying protocol difference, such as sim cards not requiring real time connection and that there is a holding area for sms, where messages are kept if the recipient is offline(maybe their phone is dead, or they are in an area with bad network coverage).
+
+For Internet connection, it's also almost the same, but with some interesting touch of complexities and changes, let's check that out.
 
 ---
 
