@@ -52,9 +52,11 @@ Let's get into that. The steps to recreate this is shown below.
     
 3. You click the "add media" button, which is how you select the HD version of the file you want to send, and send it to yourself.
     
-4. I have selected an image and have clicked on the HD icon, to push up the transfer quality.
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1708615754807/f12da442-bf9b-48f3-b59b-377ca56aab8b.png align="center")
     
-5. I send that image to myself in the DM, a lot happens behind the scene with just this action, but I would get to that later.
+4. I have selected an image and clicked the HD icon, to push up the transfer quality.
+    
+5. I send this image to myself in the DM, a lot happens behind the scene with just this action, but we would get to that later.
     
 6. This shows the HD image tag on the image to show the quality is HD.
     
