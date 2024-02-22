@@ -3,7 +3,7 @@ title: "How to improve your whatsapp status quality"
 datePublished: Thu Feb 22 2024 03:07:31 GMT+0000 (Coordinated Universal Time)
 cuid: clswn7ir600020bk0a8s5gvfl
 slug: improve-whatsapp-status-quality
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1708339731093/49f25e18-ffe4-459b-9336-c4345593e8f7.png
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1708571457974/73c1417e-e801-4367-9626-36940f2d8248.png
 tags: software-architecture, computer-science, whatsapp, technical-writing-1, whatsapp-tips
 
 ---
