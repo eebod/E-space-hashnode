@@ -69,82 +69,96 @@ Let's get into that. The steps to recreate this is shown below.
 
 The last slide shows that the image has been successfully uploaded to my status at the HD resolution quality, as opposed to just sharing the image without this option.
 
-Posting this way to your status can be done for any media type allowed by Whatsapp, which can also be HD.
+Posting this way to your status can be done for any media type allowed by Whatsapp.
 
 ### **How do you know this works?**
 
-Ahhh yes! This is a very valid question. The image above is assumed to be of better quality, but how can this be proven. This is what would be done in this section.
+Ahhh yes! This is a very valid question. The image above is assumed to be of better quality, but how can this be proven?
 
-To prove that this approach to updating media on Whatsapp actually improves the quality, there are two tests involved, the visual test and the size test.
+To prove that this approach to updating media on Whatsapp actually improves the quality, there are two tests involved, the visual and size test.
 
 * **Visual Test**
     
-    For the visual test, all I have to do is post the same images side by side, one using the HD the other following the regular approach. This is the major reason why you would actually do this, to see a visual improvement in the quality of your post. Unforunately, I would not be able to highlight the differences on here, this is due to the fact that, this platform performs its own image compression when uploaded and would tamper with the quality of the images being compared. But you can do this yourself and find the difference.
+    For the visual test, all I have to do is post the same images side by side, one, using the HD upload method, the other, just the regular status upload approach we are all used to.
     
-* **Size Test**
+    This, of course is the major reason why you would actually do this. To visually improve the quality of your Whatsapp media post.
     
-    This is where we can fully confirm the image quality difference. To get to this, you first need to know that the higher the quality of a media, the larger the size of that media. A picture that's just regular quality may be 1Megabyte(1 MB) in size, while that same image in clearer quality and higher resolution would **most likely** be larger in size, around 1.5 to 3Megabytes(1.5-3MB). This outlines the difference in resolution. Also take note of the fact I said most likely, not always. There are lots of compression algorithms out there that could reduce the size of a media file and leave the quality as good(lossless compression), these defy those logic.
-    
-    Let me show you the size differences in the images and videos I uploaded to my Whatsapp status with the two different approach.
-    
-    This section was powered by **Adunni's** device.
+* Unforunately, I would not be able to highlight the differences on here, this is due to the fact that, this platform(hashnode) performs its image compression when uploaded here, this would tamper with the quality of the images being compared and make it very hard to make out any difference. But you can do this yourself and find the difference.
     
 
-To get the sizes of the files, you need to know that every Whatsapp status you ever view has to be downloaded off Whatsapp's server and be saved on your phone for 24hrs or for as long as that status is kept up by the poster. To achieve this, I posted this to my status and to ensure that my local environment has no effect on the size, I reached out to another Whatsapp user and there we investigated the sizes of the files.
+**Size Test**
+
+This is where we can fully confirm the image quality difference. To get to this, you first need to know that the higher the quality of a media, the larger its size. A regular quality picture may be around 1Megabyte(1 MB) in size, while that same image in clearer quality and with higher resolution would "**most likely"** be larger in size, around 1.5 to 3Megabytes(1.5-3MB).
+
+Take note of the fact I said most likely, not always, there are compression algorithms out there that could reduce the size of a media file and leave the quality as good as it orignally was, this is called a lossless compression, these defy those logic, hence the "most likely" statement.
+
+To show the size differences in the images and videos I uploaded images and videos to my Whatsapp status with the two different approach and pointed out the size differences.
+
+> This section was powered by **Adunni's** device.
+
+To get the sizes of the files, you need to know that every Whatsapp status you ever view has to be downloaded off Whatsapp's server and saved on your device for 24hrs or for as long as it kept up.
+
+To achieve this, I posted this to my status and reached out to investigate the size of the files.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1708559056050/5c66379f-b06e-47b1-91d0-6ef513d5fe25.png align="center")
 
-1. Arrow 1 points to the size of the first image, when it is posted to my Whatsapp status without the HD approach I outlined earlier. This is how we mostly post status everyday, the regular way. The size of that image is **93.61 KiloBytes**, which has been compressed down by Whatsapp's compression algorithm in-app, that image has therefore lost a lot of its quality, which is obvious in its appearance.
+1. Arrow 1 points to the size of the first image posted to Whatsapp status without the HD approach. This is how we mostly post status everyday, the regular way. The size of the image is around **93.61 KiloBytes**, with its size and quality reduced by Whatsapp's in-app compression algorithm.
     
-2. Arrow 2 points to the size of the second image which I posted using the HD method. The size is **548 Kilobytes**, which is about 6times the size of the first image, that means the quality of the image is a lot better compared to the first.
+2. Arrow 2 points to the size of the second image posted to status using the HD method. The size is around **548 Kilobytes**, which is about 6times the size of the first image, showing a meaningful improvement in the size and quality of the image in this approach.
     
-3. Arrow 3 points to the size of a video I posted using the same HD approach, the size of the video is **4.87 MegaByte**. I did this to show it also works for vides as well and improves their quality as well.
+3. Arrow 3 points to the size of a video posted using the same HD approach, the size of the video is around **4.87 MegaByte**. This was done to show this method also works fine for vides as well and improves their quality.
     
-4. Arrow 4 point to the size of that same video, but the video was posted the same way we all post videos on our Whatsapp status everyday. Its size is **1.93 Megabyte**, about 2 and a half lesser in size to the video in the first approach, showing how much lesser in quality it is in comparison with the first video.
+4. Arrow 4 point to the size of that same video, but this time posted without the HD approach. Its size on device is around **1.93 Megabyte**, about 2 and a half times lesser in size to the video in the HD approach. This shows how much lesser in size and quality it is in comparison to the first video.
     
 
-I think at this point, I have been able to show you the difference, between posting normally, and using the HD approach and how much more better in quality it gets with this approach. One final thing I want to get to, is the How this works question. This would contain my assumed technicals of why and how this works.
+I think at this point, I have been able to point out the difference in posting normally, and using the HD approach for your Whatsapp post. This improves the quality of the media files being posted.
 
-### Why and How does this Work
+### Why and How does this Work?
 
-Earlier in this article, I mentioned something something about caching. To explain caching, lets start on a familiar note. Have you ever noticed, that whenever you send a large file to a friend on whatsapp the first time, it takes quite a while to process, and send, but when you either forward or send that same file to someone else, it sends almost instantly. If you have never noticed this, quickly go try it out. Send around a 10MB file to friend A, then either forward or send that same file to friend B and see how fast/instantly the file sends the second time.
+Earlier in this article, I mentioned something something about caching. To explain caching, lets start on a familiar note.
 
-So, initially when I found out, I assumed what was happening, and guess I assumed correctly. But knowing that this would be a public article, and people would want to know what my statements are based on, I decided to dig around and find official information to back this assumption up. It's provided below.
+Have you ever noticed, that whenever you send a large file to a friend on whatsapp the first time, it takes quite a while to process and eventually send. When you either forward or send that same file to someone else on your contact list, it sends almost instantly this time.
 
-**So what is happening?** The first time you send a message or file or just about anything on Whatsapp, most people think it goes straight to the device of whoever they are sending it to, nope, first it goes from your phone straight to whatsapp's server, where it stays and chills, before getting sent to the whoever's device you sent it to.
+If you have never noticed this, go try this out. Send a file around 10MB in size to friend A, then either forward or send that same file to another friend B and see how fast/instantly the file is sent the second time.
 
-Why would they do this you hurriedly ask next. Okay, okay, I'll answer that to. Actually, there are some pretty good reasons for this, let me explain, the first being that, there are a lot of cases where the user you are sending the message to, isn't online due to either not been connected to the internet, or their device has a flat battery. If those messages are not first stored on Whatsapp servers and just sent directly to such user, the messages would never get delivered and just "fall off the internet".
+So, initially when I found out, I just assumed what was happening and left it at that, but knowing that this would be a public article, and people would want to know what my statements are based on, I decided to dig around and find official information to back this assumption up.
+
+**So what is happening?** The first time you send a message or file or just about anything on Whatsapp, most people think it goes straight to the device of whoever they are sending it to, nope, first it goes from your device straight to whatsapp's server, where it first stored before getting sent to the receiver's device it was sent to.
+
+Why would they do this you ask next. Okay, okay, I'll answer that too. There are some pretty good reasons for this, the first being that, there are a lot of cases where the user you are sending a message or file to isn't online due to any number of reasons. If those messages are not first stored on Whatsapp servers and then sent to such user, the messages would never get delivered and just "fall off the internet", but after being saved on their server, it keeps retrying to send the message from the server to the device, till it succesfully does.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1708567284055/cc45b075-ebc7-47b8-b0d6-6b4e949772b2.png align="center")
 
 A snippet from Whatsapp on message/file storage. You can view it [here](https://www.whatsapp.com/legal/privacy-policy-eea#:~:text=We%20temporarily%20store%20your%20messages,we%20try%20to%20deliver%20it.)
 
-Hopefully the image and the explanation I gave above, makes you understand one of the WHYs. On the privacy side, you might ask, doesn't this mean they can check my messages when it is on their servers? according to Meta(Whatsapp's parent company) our messages are encrypted end-to-end, and the keys are only on our device, which means if they tried to look at your message it'll look like garbage to them. I'm taking their word for that.
+Hopefully the image and the explanation I gave above, makes you understand one of the WHYs. On the privacy side, you might ask, doesn't this mean they can check my messages when it is on their servers? according to Meta(Whatsapp's parent company) our messages are encrypted end-to-end, and the keys are only stored on our device, which means if they tried to look at your message it'll look like garbage to them. I'm taking their word for that.
 
-The second and most important reason why messages(texts/files) are also sent to their server, is to serve as a type of cache, now let's talk caching. Earlier, I asked if you noticed how files sent the first time take a longer time, while the same file sent the second and other times, takes lesser time.
+The second and most important reason why messages(texts/files) are also sent to their server, is to serve as a type of cache, now let's talk caching.
 
-The first time you send the file, it is not sent to the user directly as we earlier mentioned, it is first stored on Whatsapp's server, then a link to that file is sent to the user, that's why they have a download option, so when they click download, they can get access to that file and save it on their device.
+I earlier mentioned that the first time you send a message, but in this case, it is a file, this is also not sent to the user directly, it is first stored on Whatsapp's server, then a link to that file is sent to the user with a download option, when they click download, the file is downloaded from the server over to their device.
 
-Remember now that from the most recent image above, Whatsapp says they keep files/messages for a while. Now, even after the user has downloaded that file, that file still stays on their server for a period of time determined by their server. If you then decide to send that same file to another person, within the time the file is still on the serve, and whatsapp can verify that nothing changed and it's the same file(most likely through a hash check), rather than having you send that file up again to the server, they tell your phone, "Hey we have this file already, just tell the user it's sent(your phone ticks sent almost instantly)", then the same link sent to the first user you initially sent that file to, is also sent to this new person you're sending the file to, and they can download if they want to. This saves both you from wasting data to send the same file again to their server and Whatsapp from having to give up extra space to store duplicate files.
+In the snippet above, Whatsapp says they keep files/messages for a while. That file you sent to another user still stays on their server for a period of time determined by their server. If you then decide to send that exact same file to another person while the file is still held on the server, rather than you having to send that file up again to the server, they tell your device, "Hey we have this file already, just tell the user it's sent(your phone ticks sent almost instantly)".
 
-Also, the moment Whatsapp deletes the file from their server, you get that error message on Whatsapp when you try to download, where they tell you to "Ask whoever sent the file to resend it".
+The same link sent to the first user for that same file is then sent to this new person you're sending the file to, and they can download it, if they want to. This saves you from wasting data to send(re-upload) the same file again to their server and also saves Whatsapp from having to give up unnecessary space to store duplicate files.
 
-This, is one definition to caching. "Temporarily saving data copies somewhere, so it can be accessed and retrieved faster and more efficiently".
+The moment Whatsapp deletes a file from their server, you get an error message on Whatsapp when you try to download, telling you to "Ask whoever sent the file to resend it". You most likely have seen this.
 
-You might then think, but they have enough space on their servers right? But the moment you realize that they have around a billion daily active users and a large number of these persons including you and I, all send files every now and then in Kilobytes, Megabytes and Gigabytes, you'll know that they save Terabytes on Terabytes of server space per second with just this approach and it's very very reasonable to.
+This whole process is one definition to caching, "temporarily saving data copies somewhere, so it can be accessed and retrieved faster and more efficiently".
+
+You might then think, but don't Meta have big and bad enough servers with enough space on their servers for all these? Yes, but also, the moment you realize that they have around a billion daily active users and a large percentage of these persons including you and I, send different files every now and then in Kilobytes, Megabytes and Gigabytes, you'll know that this save Terabytes on Terabytes of server space per second with just this approach and it's very very reasonable to.
 
 **So how does this and the HD Whatsapp Status thing relate?**
 
-If you haven't made the connection yet, here it is. So the first time you send that HD media to yourself, it gets sent to Whatsapp's servers like every other message.
+If you haven't made the connection yet, here it is. So the first time you send that HD media to yourself, it gets sent to Whatsapp's servers like every other message or file.
 
 The next step you take, is to forward that message to your status right?
 
-So Whatsapp asks the server, do we have that picture, the server responds, "yes yes, we do, it's even in HD". Whatsapp rather than letting you resend another copy of that media file, instead creates a download link to that same HD file on their server, and lets all of your contacts have access to the file, but this time on your status.
+So Whatsapp asks the server, do we have that picture on our server? The server responds, "yes yes, we do, it's even in HD". Whatsapp rather than letting you resend another copy of that same file, creates a download link to the same HD file on their server, and lets all of your contacts have access to the file, but this time on your status.
 
-Voila, mission accomplished, connection created.
+This, my friend, is how and why this HD status upload approach works.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1708569404224/1c008be1-6434-4198-a136-9fdf9f9c8bb1.gif align="center")
 
-It's a long write-up, but if you got here, I am guessing it was a good read. If you actually found this to be a good and useful read, Please share with others who you think might find this useful and interesting as well.
+It's a long write-up, but if you got here, I am guessing it was a good read. If you actually found this to be a good and useful read, Please share with others who you think might also find it useful and interesting as well.
 
 > **Thank you.**
