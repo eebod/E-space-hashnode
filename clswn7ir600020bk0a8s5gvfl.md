@@ -73,7 +73,7 @@ Posting this way to your status can be done for any media type allowed by Whatsa
 
 ### **How do you know this works?**
 
-Ahhh yes! This is a very valid question. That image above is assumed to be of better quality till it can be proven. This is what would be done here..
+Ahhh yes! This is a very valid question. The image above is assumed to be of better quality, but how can this be proven. This is what would be done in this section.
 
 To prove that this approach to updating media on Whatsapp actually improves the quality, there are two tests involved, the visual test and the size test.
 
