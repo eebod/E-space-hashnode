@@ -1,5 +1,5 @@
 ---
-title: "How to improve your whatsapp status update quality"
+title: "How to improve your whatsapp status quality"
 datePublished: Thu Feb 22 2024 03:07:31 GMT+0000 (Coordinated Universal Time)
 cuid: clswn7ir600020bk0a8s5gvfl
 slug: improve-whatsapp-status-quality
