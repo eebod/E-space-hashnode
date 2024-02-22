@@ -53,22 +53,22 @@ Let's get into that already. The steps to recreate this method is shown below.
 3. You click the "add media" button, which is what how you select the HD version of the file you want to send.
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1708556293322/4f219df0-ebd6-4af7-992a-af7460896c50.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1708599886932/f1f93575-aba2-4d41-89b1-8fe2df6c165a.png align="center")
 
 1. I have selected an image and have clicked on the HD icon, to push up the transfer quality.
     
 2. I send that image to myself in the DM, a lot happens behind the scene with just this action, but I would get to that later.
     
-3. I click on the forward button for that particular media already in my personal message box.
+3. This shows the HD image tag on the image to show the quality is HD.
     
-4. This shows the HD image tag on the image to show the quality is HD.
+4. I click on the forward button for that particular media already in my personal message box.
     
 5. On the forward option, I select to my status.
     
 6. This shows a box where I can add a body of text or "caption" to the image.
     
-7. The last slide shows the image uploaded to my status with a higher quality, as opposed to just sharing the image normally without pasing the HD option
-    
+
+The last slide shows the image uploaded to my status with a higher resolution(quality), as opposed to just sharing the image normally without pasing the HD option
 
 Posting this way to your status can be done for any type of media allowed by Whatsapp to be pushed up to HD.
 
@@ -146,6 +146,6 @@ Voila, mission accomplished, connection created.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1708569404224/1c008be1-6434-4198-a136-9fdf9f9c8bb1.gif align="center")
 
-It's been a long write-up, but if you got here, I am guessing it was a good read. If you actually found this to be a good and useful read, Please share with others who you think might find this useful and interesting as well.
+It's a long write-up, but if you got here, I am guessing it was a good read. If you actually found this to be a good and useful read, Please share with others who you think might find this useful and interesting as well.
 
 > **Thank you.**
