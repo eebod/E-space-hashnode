@@ -8,7 +8,7 @@ tags: software-architecture, computer-science, whatsapp, technical-writing-1, wh
 
 ---
 
-Let's keep this simple and straight to the point. You want to know what I found, I also want to share this. But hey, I wouldn't only tell you just that though, I like to geek about the technicals, you would have to hear that as well. So, it's a 2-for-1 treat tonight. Let's get started and to Business.
+Let's keep this simple and straight to the point. You want to know what I found, I also want to share this. But hey, I wouldn't only tell you just this though, I like to geek about the technicals, you would have to hear that as well. So, it's a 2-for-1 treat tonight. Let's get started and to Business.
 
 ### Why is this possible now?
 
@@ -16,15 +16,15 @@ One primary reason why this is now possible and wasn't before, is because Whatsa
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1708510500922/5cff10b0-c6ec-4ad9-8c16-87c63e6a9241.png align="center")
 
-Around late last year, Whatsapp introduced the HD transfer feature allowing users send images, videos or any other files at a higher quality by enabling the HD option when sending.
+Around mid to late last year, Whatsapp introduced the HD transfer feature allowing users send images, videos or any other files at a higher quality by enabling the HD option when sending.
 
 The [Verge](https://www.theverge.com/2023/8/17/23835641/whatsapp-hd-photo-video-compression) and [Techcrunch](https://techcrunch.com/2023/08/17/whatsapp-adds-support-for-hd-photos-says-hd-video-coming-soon/) provides more information about that update, if you are interested in that.
 
-HD stands for High Definition, this means the media(image or picture) is at a higher resolution as compared to SD(Standard Definition) and other lesser quality media. This makes it look better with higher quality. It is not the best quality there is out there, but it is an improvement to what has been always offered by Whatsapp.
+HD stands for High Definition, this means the media(image or picture) is at a higher resolution as compared to SD(Standard Definition) or other lesser media resolution/quality. This makes it look better. It is not the best quality there is, but it is an improvement to what has always been offered by Whatsapp.
 
 In a previous [article](https://ebode.hashnode.dev/whatsapp-quality-reduction), I explained why Whatsapp reduces the quality of files you transfer, and how it saves them millions of dollars annually in running costs. Reading that should help you understand that this new feature comes at a cost to Whatsapp and why they can't just give you the best quality for your file transfers.
 
-Therefore this workaround involves using this feature provided by Whatsapp for sending HD files, to also upload files on your Whatsapp status, therefore improving quality by at least x2 to x5 depending on the file type.
+This workaround involves using this HD feature provided by Whatsapp for sending files, to also upload files on your Whatsapp status, therefore improving quality by at around x2 to x5 depending on the file type.
 
 ### The workaround
 
@@ -34,23 +34,23 @@ I tried two different approach to achieve this, the first failed. It seemed like
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1708512078111/d1facb54-fb64-4b98-9c1a-61af2f9c34d6.png align="center")
 
-The image above shows the first failed attempt to improve status quality.
+The image above shows the approach to the first failed attempt to improve status quality.
 
 **\- Second Approach (Passed)**
 
-I know Whatsapp does some message and media management and tries to be efficient with those, by not letting you upload the exact same file over and over to their server, and using up unnecessary storage space, which can quickly add up, as Whatsapp has over a billion daily active users who shares one type of file everyday.
+I know Whatsapp does some message and media management, and tries to be efficient with those, by not letting you upload the exact same file over and over to their server, therefore using up unnecessary storage space, which can quickly add up.
 
-They do a type of file caching(I would get into that later), which helps them avoid storing duplicate file over and over on their server. This is caching is what made this approach work.
+They do a type of file caching(I would get into that later), to avoid storing duplicate file on their server. This caching approach is what made this approach work.
 
-Let's get into that already. The steps to recreate this method is shown below.
+Let's get into that. The steps to recreate this is shown below.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1708520918450/7700d75f-e856-46ea-9112-38ed5eca700f.png align="center")
 
 1. Click the "add a contact to text" (button), you can actually send a message to yourself which is the least intrusive option.
     
-2. The first option in there is to "message yourself", which is what we would use. This was officially introduced last year also, although I already used it earlier, as I use it to send text and files across my devices(PC and smartphone), and in this case, we would use it send myself HD version of messages.
+2. The first option in there is to "message yourself", which is what we would use. This was officially introduced last year also.
     
-3. You click the "add media" button, which is what how you select the HD version of the file you want to send.
+3. You click the "add media" button, which is how you select the HD version of the file you want to send, and send it to yourself.
     
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1708599886932/f1f93575-aba2-4d41-89b1-8fe2df6c165a.png align="center")
