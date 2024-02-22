@@ -60,16 +60,16 @@ Let's get into that. The steps to recreate this is shown below.
     
 6. This shows the HD image tag on the image to show the quality is HD.
     
-7. I click on the forward button for that particular media already in my personal message box.
+7. I click on the forward button for that same picture I just sent internally.
     
 8. On the forward option, I select to my status.
     
-9. This shows a box where I can add a body of text or "caption" to the image.
+9. This provides a box where I can add a "caption" for that image.
     
 
-The last slide shows the image uploaded to my status with a higher resolution(quality), as opposed to just sharing the image normally without pasing the HD option
+The last slide shows that the image has been successfully uploaded to my status at the HD resolution quality, as opposed to just sharing the image without this option.
 
-Posting this way to your status can be done for any type of media allowed by Whatsapp to be pushed up to HD.
+Posting this way to your status can be done for any media type allowed by Whatsapp, which can also be HD.
 
 ### **How do you know this works?**
 
