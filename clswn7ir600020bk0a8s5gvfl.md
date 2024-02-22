@@ -52,20 +52,18 @@ Let's get into that. The steps to recreate this is shown below.
     
 3. You click the "add media" button, which is how you select the HD version of the file you want to send, and send it to yourself.
     
-
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1708599886932/f1f93575-aba2-4d41-89b1-8fe2df6c165a.png align="center")
-
-A. I have selected an image and have clicked on the HD icon, to push up the transfer quality.
+4. I have selected an image and have clicked on the HD icon, to push up the transfer quality.
     
-B. I send that image to myself in the DM, a lot happens behind the scene with just this action, but I would get to that later.
+5. I send that image to myself in the DM, a lot happens behind the scene with just this action, but I would get to that later.
     
-C. This shows the HD image tag on the image to show the quality is HD.
+6. This shows the HD image tag on the image to show the quality is HD.
     
-D. I click on the forward button for that particular media already in my personal message box.
+7. I click on the forward button for that particular media already in my personal message box.
     
-E. On the forward option, I select to my status.
+8. On the forward option, I select to my status.
     
-F. This shows a box where I can add a body of text or "caption" to the image.
+9. This shows a box where I can add a body of text or "caption" to the image.
+    
 
 The last slide shows the image uploaded to my status with a higher resolution(quality), as opposed to just sharing the image normally without pasing the HD option
 
