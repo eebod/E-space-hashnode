@@ -76,7 +76,7 @@ Posting this way to your status can be done for any type of media allowed by Wha
 
 Ahhh yes! This is a very valid question. That image above is assumed to be of better quality till it can be proven. This is what would be done here..
 
-To prove that this approach to updating media on Whatsapp improves te quality, there are two tests involved, the visual test and the size test.
+To prove that this approach to updating media on Whatsapp actually improves the quality, there are two tests involved, the visual test and the size test.
 
 * **Visual Test**
     
