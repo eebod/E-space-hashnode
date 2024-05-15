@@ -70,15 +70,17 @@ The article from Vodafone is [here](https://www.vodafone.co.uk/newscentre/smart-
 
 ### **How are Phone Calls Connected**?
 
-To answer this, first, you should know that your phone is almost always connected to the nearest network mast with the strongest network signal close to you. This also depends on the network provider. It is why you have those small network bar(s) at the top of your phone, it shows how close you are to the mast and how strong the connection signal is. If you are in an area where your phone or device can't reach a network mast from your internet service provider, you get the 'No Signal' or 'No Network' network status.
+To answer this, first, you should know that your phone is almost always connected to the nearest network mast with the strongest network signal close to you/it. This also depends on the network provider. It is why you have those small network bar(s) at the top of your phone, it shows how close you are to the mast and how strong the connection signal is. If you are in an area where your phone or device can't reach a network mast from your Telcom service provider, you get the 'No Signal' or 'No Network' network status.
 
-Also, you need to know that every network mast out there is connected to another mast, either via cables or micro waves(wirelessly). You might not see it, but they are all connected and talking to each other over very large distances. Another crucial part of all this is the Mobile Switching Center(MSC), this is a central control point in the network, it manages call routings, connections between masts, billing, authentication, and overall network management tasks.
+Also, as earlier stated, every network mast out there is connected to another mast, either via cables or micro waves(wirelessly). You might not see it, but they are all connected and talking to each other over very large distances. Another crucial part of all this is the Mobile Switching Center(MSC), this is a central control point in the network, it manages call routings, connections between masts, billing, authentication, and overall network management tasks.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680809951556/587cc6e8-e269-452e-aef1-3d83710256ad.jpeg align="center")
 
-Back to the main question, how do calls go from one edge of the country to the other side and get to ?
+Back to the main question, how do calls go from one edge of the country to the other side and get to who we call correctly?
 
-When you call a number, your device(smart-or-not phone) sends a request to the mast it is connected to as we mentioned earlier. That mast forwards that call to the nearest base station which checks that you have the correct permissions to make the call. When it is confirmed to not have an issue, the base station assigns the caller a frequency channel and then forwards that call to the Mobile Switching Center (MSC). The MSC does other checks too and if it passes, it goes ahead to determine the routing path for the call. A route is all the masts a call needs to pass through to get from your phone to the mast where the number you're calling is connected to. After finding the route, it directs the call through it. Once the call request reaches the mast connected to the number called, the mast sends the call notification to the device that has the number being called, prompting it to ring and alert the user of the incoming call.
+When you call a number, your device(smart-or-not phone) sends a request to the mast it is connected to as we mentioned earlier. That mast forwards that call to the nearest base station which checks that you have the correct permissions and requirements to make the call. When this is confirmed, the base station assigns the caller a frequency channel and then forwards that call to the Mobile Switching Center (MSC). The MSC does its own integrity checks as well and if it passes, it goes ahead to determine the routing path for the call.
+
+A route is all the masts a call needs to pass through to get from your phone to the mast where the number you're calling is connected to. Upon finding this route, it directs the call through it. Once the call request reaches the mast connected to the number called, the mast sends the call notification to the device that has the number being called, prompting it to ring and alert the user of the incoming call.
 
 For a little more technical on how the calls move, let's highlight the main processes:
 
@@ -99,7 +101,7 @@ The quality of a call is dependent on factors like signal strength(the distance 
 
 All of the above is what happens when you make a call from one phone number to another, it's also almost the same thing that happens when a SMS(Short Message Service) is sent, with some underlying protocol difference, such as sim cards not requiring real time connection and that there is a holding area for sms, where messages are kept if the recipient is offline(maybe their phone is dead, or they are in an area with bad network coverage).
 
-For Internet connection, it's also almost the same, but with some interesting touch of complexities and changes, let's check that out.
+For Internet connection, it's also almost the same, but with some interesting extra touch of complexities and changes, let's check that out.
 
 ---
 
@@ -107,17 +109,21 @@ For Internet connection, it's also almost the same, but with some interesting to
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680845784600/7c4883da-060d-4443-b82b-ce548e9d3578.png align="center")
 
-Every time we use **mobile data**, that's internet access from your mobile phone through the SIM(Subscriber Identity Module) provided by ISPs like MTN, Airtel and the like in Nigeria, some radio magic happens.
+Every time we use **mobile data**, that's internet access to your mobile phone via the SIM(Subscriber Identity Module) provided by Telcos like MTN, Airtel and the like in Nigeria, some radio magic happens.
 
-When you or anybody access the internet, it simply means you have access to files on the **INTER**connected **NET**work, a connection of millions of computers around the world. This means you can reach and talk to computers owned by Google, therefore allowing you access to applications on their computers like Google's search engine, Youtube, not just Google's computers though, TikTok, Linkedin, Facebook, Amazon, Jumia, Bolt and every other website you can reach out there, you can reach their applications because they are available on the internet. You also have the ability to send files to computers on the internet(UPLOAD) or pull down files from the internet(DOWNLOAD)
+When you or anybody access the internet, it simply means you have access to files on the **INTER**connected **NET**work, a connection of millions of computers around the world. For example, this means you can reach and talk to computers owned by Google, therefore allowing you access to applications on their computers like Google's search engine, Youtube. On the internet you can access not just Google's computers though, you have access to Wikipedia, Zoom, TikTok, Linkedin, Facebook, Amazon, Jumia, Bolt, Uber and millions of other website out there.
+
+You can use their applications because they are available on the internet. You also have the ability to send files to computers on the internet(UPLOAD) or pull down files from the internet(DOWNLOAD), which is mostly what you do, when you watch, reels, shorts, stream movies etcetera.
+
+The internet is not some magic, but rather a very well thought through connections between continents with resources, via fibre cables laid on the sea floor, which are then picked up and managed by ISPs, data centers or service providers within each countries where they land.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680858690329/b51dfd8b-080c-4989-bfeb-3d2c0d284bd3.png align="center")
 
 ⬆️ | [Image](https://www.submarinecablemap.com/) showing the Fiber cables under the sea, powering the internet.
 
-How you reach those servers is in itself a giant networking topic and a complex feat of engineering handled by Internet service providers around the world. But we'll just talk about the role the network masts play in the whole process.
+How you reach those servers is in itself a networking topic deserving a write up of its own and an beautiful engineering feat handled by Internet service providers around the world. But now, we'll just talk discuss the role the network masts deployed by telcos to extend their network, play in the whole process.
 
-* When you access the internet(assuming you still have an active data **subscription🥴**), the data(usually a type of request), is transmitted from your phone to the nearest network mast it is connected to, in the form of radio waves.
+* When you access the internet(assuming you still have an active data **subscription**), the data allows you to speak to the mast which passes on that request to other masts.
     
 * The data is then processed by the radio unit(I talked about radio units earlier up) on the network mast, which converts the data from digital to analog signals that can be transmitted over airwaves.
     
@@ -162,25 +168,23 @@ The best part about all of this is that it happens so fast, you don't even know 
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680862622916/2caeff0c-3047-4ab2-817d-c01461e4df12.jpeg align="center")
 
-Without network masts, the majority of everyone wouldn't be able to do anything, make calls, send texts or use the internet. This is slowly changing though, as there are already things like FTTH(Fiber-To-The-Home) where you have a wired connection to your house to access the internet instead, there is also now a growing battle of satellite internet with the likes of [HughesNet](https://www.hughesnet.com/), [Viasat](https://www.viasat.com/), [Starlink](https://www.starlink.com/), [Oneweb](https://oneweb.net/), [Telesat](https://www.telesat.com/), [Project-Kuiper](https://www.aboutamazon.com/what-we-do/devices-services/project-kuiper) etcetera. Also, we have our popular friend Wifi/Hotspot network too.
+Without network masts, the majority of everyone wouldn't be able to do things like making calls, sending texts or using the internet. This is slowly changing though, as there are already things like FTTH(Fiber-To-The-Home) where you have a wired connection to your house to access the internet instead, there is also now a growing battle of satellite internet projects with the likes of [HughesNet](https://www.hughesnet.com/), [Viasat](https://www.viasat.com/), [Starlink](https://www.starlink.com/), [Oneweb](https://oneweb.net/), [Telesat](https://www.telesat.com/), [Project-Kuiper](https://www.aboutamazon.com/what-we-do/devices-services/project-kuiper) etcetera. Also, we have our popular easy to use Wifi/Hotspot network too that we could quickly use to share files with a friend.
 
-**Then why do we pay for internet I still hear you ask?**
+### **Then why do we pay for internet I still hear you ask?**
 
 If you didn't figure that out yet, yeah, let's talk about it. Earlier on we talked about network masts, first, those things are expensive to set up, getting a piece of land to set them on, the structure and the work to get them up, the cost of the antennas, radio unit, the cost of a backhaul if used(having to dig the ground and lay cables to connect one mast to another), cost of cables, costs of generators, the cost of fueling, there is a need to put someone on salary to constantly monitor the premise and maintain the system.
 
-While writing this article, I came across a news article where thieves walk into a network mast premise to steal diesel meant to power the generators, that's just on the light side of the vandalism, it gets worse. They also have to pay engineers to manage the hardware and software sides of everything.
+While writing this article, I came across a news write-up where thieves walked into a network mast premise to steal diesel meant to power the backup generators, and that's just the light side of the vandalism, it gets worse.
 
-Add all of these things up and multiply it across all the network masts you see around and you can very quickly see the running cost emerge.
+They also have to pay engineers to manage the hardware and software sides of everything.
 
-One other thing, companies like MTN don't also connect directly to the internet, they also connect to other ISPs for service, it's a hierarchical order of connection, and there are tiers to it:
+It also cost an awful lot for Telcos to purchase spectrum licenses, I mean (1G, 2G, 3G, 4g and currently 5G), the most recent 5G spectrum license MTN had to buy from NCC, cost over 200 Million dollars, Airtel bought as well, and they have had to buy licenses all through the spectrum band to 5G.
 
-**Tier-1:** these are the largest and most interconnected networks in the world. They have direct connections to all other Tier 1 ISPs.
+When you add all of these things up and multiply it across all the network masts you see around and you can very quickly see a large startup and running cost emerge.
 
-**Tier-2:** these are smaller networks that connect to Tier 1 ISPs and other Tier 2 networks. They typically serve a regional or national market, and may also provide services to smaller ISPs or businesses.
+One other thing, companies like MTN, Airtel, GLO, etc might not also connect directly to the internet, they also connect to other ISPs for service, it's a hierarchical order of connection, and there are tiers to it, if they do not connect directly, they have to pay for connections.
 
-**Tier-3:** these are local or regional networks that connect to Tier 1 or Tier 2 ISPs to access the wider internet. They may provide services to residential or business customers or may serve as backhaul providers for smaller ISPs.
-
-In the case of MTN in Nigeria, it is regarded as being on a Tier-1, based on its deep network coverage and infrastructural size, it is in the same space as Globacom and Airtel. On the global scale though, MTN still needs to reach out to other ISPs to pull and push data, they pay to do this.
+Also we mentioned sub sea cables earlier. Running and maintaining these types of cables connecting one continent to another, cost millions of dollars.
 
 A clearer image should have appeared by now, as to how much it costs to start and run a Telecommunication or Internet Service providing company. It is both capital-intensive and also running-cost-intensive, to stay sustainable and run at a profit, we the users have to pay to use the service.
 
