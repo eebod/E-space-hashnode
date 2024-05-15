@@ -43,13 +43,13 @@ In my search, one of the things I found was a detailed page from [Vodafone](http
     
 2. #### Radio unit
     
-    The radio unit generates the radio waves transmitted by the antennas. It is responsible for converting signals between the wireless devices(your phones. etc) and the network, amplifying the signal, and transmitting it to the base station. Similarly, it receives signals from the **base station** and converts them into a form that can be transmitted wirelessly to devices.  
-      
+    The radio unit generates the radio waves transmitted by the antennas. It is responsible for converting signals between the wireless devices(your phones. etc) and the network, amplifying the signal, and transmitting it to the base station. Similarly, it receives signals from the **base station** and converts them into a form that can be transmitted wirelessly to devices.
+    
     A **base station** is equipment typically located within or near a network mast, serving as a central hub that manages communication between wireless devices and the mast network. Additionally, it provides authentication and security for wireless connections.
     
 3. #### Transmission/backhaul
     
-    Cables, traditionally copper but now far more likely to be fiber optic, are used to connect one mast with other masts within the network. They are usually buried in the ground, and a few of us have likely seen cables being layed close to the road, buried in the ground and not understanding what's happening, this is one explanation to that. In a few cases where it is not feasible to use cables laid in the ground, a microwave dish is used instead.
+    Cables, traditionally copper but now far more likely to be fiber optic, are used to connect one mast with other masts within the network. They are usually buried in the ground, and a few of us have likely seen cables being laid close to the road, buried in the ground in those multiple colored pipes. In a few cases where it is not feasible to use cables laid in the ground, a microwave dish is used instead, more on that below.
     
 4. #### Cabin/cabinets
     
@@ -57,7 +57,7 @@ In my search, one of the things I found was a detailed page from [Vodafone](http
     
 5. #### Power
     
-    Most masts will draw their power from the National Grid (unfortunately, in Nigeria, our power grid collapses every market Friday😏); Instead, in our case, there need to be an extra power source on-site, mostly diesel generators.
+    Most masts will draw their power from the National Grid (unfortunately, in Nigeria, our power grid collapses every market Friday😏); Instead, in the country, there is a provision for a more dependable power source on-site, mostly diesel generators.
     
 6. #### Microwave dish
     
