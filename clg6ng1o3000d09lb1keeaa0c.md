@@ -99,7 +99,7 @@ For a little more technical on how the calls move, let's highlight the main proc
 * **Call Termination:** When the call is over, your phone sends a signal to the network indicating that the call has ended. The network releases the frequency channel and time slot assigned to your phone.
     
 
-The quality of a call is dependent on factors like signal strength(the distance between a phone and the closest mast), interference, and the route it takes. If the signal is weak, the voice quality may be poor or the call may be dropped.
+The quality of a call is dependent on factors like signal strength(the distance between a phone and the closest mast), interference, and the length of the route it takes. If the signal is weak, the voice quality may be poor or the call may get dropped.
 
 All of the above is what happens when you make a call from one phone number to another, it's also almost the same thing that happens when a SMS(Short Message Service) is sent, with some underlying protocol difference, such as sim cards not requiring real time connection and that there is a holding area for sms, where messages are kept if the recipient is offline(maybe their phone is dead, or they are in an area with bad network coverage).
 
