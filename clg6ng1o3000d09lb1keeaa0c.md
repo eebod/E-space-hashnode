@@ -70,9 +70,11 @@ The article from Vodafone can be found [here](https://www.vodafone.co.uk/newscen
 
 ### **How are Phone Calls Connected**?
 
-To answer this, first, you should know that your phone is almost always connected to the nearest network mast with the strongest network signal close to you/it. This also depends on the network provider. It is why you have those small network bar(s) at the top of your phone, it shows how close you are to the mast and how strong the connection signal is. If you are in an area where your phone or device can't reach a network mast from your Telcom service provider, you get the 'No Signal' or 'No Network' network status.
+To answer this, first, you should know that your phone is almost always connected to the nearest network mast with the strongest network signal close to you/it. This also depends on the network provider. It is why you have those small network bar(s) at the top of your phone, it shows how close you are to the mast and how strong the connection signal is. If you are in an area where your phone or device can't reach a network mast from your Telco, you get the **'No Signal'** or **'No Network'** network status.
 
-Also, as earlier stated, every network mast out there is connected to another mast, either via cables or micro waves(wirelessly). You might not see it, but they are all connected and talking to each other over very large distances. Another crucial part of all this is the Mobile Switching Center(MSC), this is a central control point in the network, it manages call routings, connections between masts, billing, authentication, and overall network management tasks.
+Also, as earlier stated, every network mast out there is connected to another mast, either via cables or micro waves(wirelessly). You might not see it, but they are all connected and talking to each other over very large distances.
+
+Another crucial part of all this is the Mobile Switching Center(MSC), this is a central control point in the network, it manages call routings, connections between masts, billing, authentication, and overall network management tasks.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680809951556/587cc6e8-e269-452e-aef1-3d83710256ad.jpeg align="center")
 
