@@ -39,13 +39,13 @@ While searching, one of the articles I came across was a detailed page from [Vod
 
 1. #### Antenna
     
-    The antennas send calls, texts and internet data to your smartphone using radio waves and in turn receive radio waves from it. The higher up an antenna is, the more likely it is that you’ll get a strong and reliable mobile signal from it. Most masts will have at least three antennas to provide coverage in every direction.
+    The antennas send calls, texts and internet data to your smartphone or just any device that can talk to a mast, like Mifi's, Routers, laptops and sim enabled IoT devices, using radio waves. The antenna can in turn receive radio waves from containing data payload as well. The higher up an antenna is, the further signal can go. Most masts will have at least three antennas to provide coverage in different directions.
     
 2. #### Radio unit
     
-    The radio unit generates the radio waves transmitted by the antennas. It is responsible for converting signals between the wireless devices(your phones. etc) and the network, amplifying the signal, and transmitting it to the base station. Similarly, it receives signals from the **base station** and converts them into a form that can be transmitted wirelessly to devices.
+    The radio unit generates the radio waves transmitted by the antennas. It is responsible for converting signals between the wireless devices and the network, amplifying the signal, and transmitting it to the base station. Similarly, it receives signals from the **base station** and converts them into a form that can be transmitted wirelessly to devices.
     
-    A **base station** is equipment typically located within or near a network mast, serving as a central hub that manages communication between wireless devices and the mast network. Additionally, it provides authentication and security for wireless connections.
+    A **base station** is an equipment typically located within or near a network mast, serving as a central hub that manages communication between wireless devices and the mast network. Additionally, it provides authentication and security for wireless connections.
     
 3. #### Transmission/backhaul
     
