@@ -53,18 +53,18 @@ While searching, one of the articles I came across was a detailed page from [Vod
     
 4. #### Cabin/cabinets
     
-    At the ground level, these contain computers that communicate with other masts in the network. Additional equipment, such as a battery backup in case of a power failure and connectors for the transmission/backhaul, are also stored here.
+    At the ground level, these contain computers that co-ordinate communication with other masts in the network. Additional equipments, such as a battery backup in case of a power failure and connectors for the transmission/backhaul, are also stored here.
     
 5. #### Power
     
-    Most masts will draw their power from the National Grid (unfortunately, in Nigeria, our power grid collapses every market Friday😏); Instead, in the country, there is a provision for a more dependable power source on-site, mostly diesel generators.
+    Most masts will draw their power from the National Grid (unfortunately, in Nigeria, our power grid collapses every market Friday); In this case, there is provision for a more reliable power source on-site, mostly diesel generators.
     
 6. #### Microwave dish
     
     In some locations, such as remote rural areas, a microwave satellite dish is used instead of fiber optic cables to act as a transmission to connect the mast to the rest of the masts on the network. These dishes transmit data wirelessly over the air using microwaves. To do so, the dish must be within line of sight of a dish on another mast, this means, there can not be any obstructions like houses, trees, poles or anything between the communicating masts. This is the primary reason they are always very tall.
     
 
-The article from Vodafone is [here](https://www.vodafone.co.uk/newscentre/smart-living/everything-you-need-to-know-about/mobile-phone-masts-everything-you-need-to-know/).
+The article from Vodafone can be found [here](https://www.vodafone.co.uk/newscentre/smart-living/everything-you-need-to-know-about/mobile-phone-masts-everything-you-need-to-know/).
 
 ---
 
