@@ -49,7 +49,7 @@ While searching, one of the articles I came across was a detailed page from [Vod
     
 3. #### Transmission/backhaul
     
-    Cables, traditionally copper but now far more likely to be fiber optic, are used to connect one mast with other masts within the network. They are usually buried in the ground, and a few of us have likely seen cables being laid close to the road, buried in the ground in those multiple colored pipes. In a few cases where it is not feasible to use cables laid in the ground, a microwave dish is used instead, more on that below.
+    Cables, traditionally copper but now far more likely to be fiber optic, are used to connect one mast with other masts within the network. They are usually buried in the ground, and a few of us have likely seen cables being laid close to public roads, mostly in multiple colored pipes. In a few cases where it is not feasible to use cables laid in the ground, a microwave dish is used instead, more on that below.
     
 4. #### Cabin/cabinets
     
