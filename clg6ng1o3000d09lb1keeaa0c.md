@@ -11,11 +11,11 @@ tags: network, radio, networking, wireless-internet-service-providers-in-nigeria
 > **Any sufficiently advanced technology is indistinguishable from magic.**  
 > \- Arthur C. Clarke
 
-I have always been very fascinated with how the internet feels so abstract and is yet so real. How do network providers like MTN, Airtel, GLO, etcetera (in Nigeria), give me access to the Internet over thin air? How do my calls and SMS texts reach the intended person? And more importantly why couldn't all of these be free? These were questions I asked as I was growing up.
+I have always been very fascinated with how the internet feels so abstract and is yet so real. How do network providers like MTN, Airtel, GLO, etcetera (in Nigeria), give me access to the Internet over thin air? How do my calls and SMS texts reach the intended person? And more importantly why couldn't all of these be free? These were questions I asked growing up.
 
 I eventually decided to find out these answers myself, and in doing so, I realized things were bigger and not as simple as they seemed on the surface.
 
-At the end of this article, you should have an idea as to why internet access can't be free, at least for the moment, and the roles those tall giant masts we often see around play in giving us access to mobile internet, sending and receiving SMS and making cellular voice calls.
+At the end of this article, you should have an idea why internet access can't be free, at least at the moment, and the roles those tall giant masts we often see around play in giving us access to mobile internet, sending+receiving SMSes and making cellular voice calls.
 
 Sit tight and stare closely as I unravel this **MAGIC.**
 
@@ -23,15 +23,15 @@ Sit tight and stare closely as I unravel this **MAGIC.**
 
 ## A TRIP INTO CONNECTION
 
-The very first question that popped into my mind back then, was how the heck were calls able to go from one phone to another? These were the days I had fun playing Bounce and Snake Xenxia on these old phones. Unfortunately, Google wasn't easily accessible back then and even when I did get some access to the search engine, I had more sinister(😈) things to do and almost usually had forgotten. Fast forward to some years back and I intentionally began to find answers to these questions. This article is a testament to the fact that I eventually found those answers.
+The very first question that popped into my mind back then, was how exactly were calls able to correctly go from one phone to another? These were the days I had fun playing Bounce and Snake Xenxia on these old phones. Unfortunately, Google wasn't easily accessible back then and even when I did get some access to the search engine, I had more sinister(😈) things to do and almost usually had forgotten. Fast forward to some years back and I intentionally began to find answers to these questions. This article shares those answers.
 
 ### Let's dissect a network mast
 
-A network mast is a tall structure, sometimes it might stand alone, in some cases it might be part of a tall tree, a tall building or just anything strong enough to carry communication components like a radio unit, antenna, or any other equipment used in telecommunications, and also it has to be tall enough to have minimum obstruction from buildings. All these so it can easily transmit and receive wireless signals from and to all devices than needs it.
+A network mast is a tall structure, sometimes standing alone, and in some cases it might be part of a tall tree, a tall building or just anything strong enough to carry communication components like a radio unit, antenna, or any other equipment used in telecommunications.
 
-In other words, it's simply a structure put in place by network service providers, that talk to our phones and other wireless devices to create a network connection for sharing files and communication.
+It also it has to be tall enough to have very minimal obstruction from buildings, all these so it can easily transmit and receive wireless signals from and to devices over long range.
 
-In my search, one of the things I found was a detailed page from [Vodafone](https://www.vodafone.co.uk/network/network-improvements) on network mast components and what each did. Rather than re-invent any wheel, I would simply give a summary of that article here, before we continue on our learning journey. A reference to the article would also be attached below.
+While searching, one of the articles I came across was a detailed page from [Vodafone](https://www.vodafone.co.uk/network/network-improvements) on network mast components and what each did. Rather than re-invent any wheel, I would give a simpler summary of what those components are and what they did here. A reference to the article would also be referenced below.
 
 ### What makes up a network mast
 
