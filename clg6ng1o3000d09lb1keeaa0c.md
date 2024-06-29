@@ -4,7 +4,7 @@ datePublished: Fri Apr 07 2023 14:35:40 GMT+0000 (Coordinated Universal Time)
 cuid: clg6ng1o3000d09lb1keeaa0c
 slug: how-network-masts-work
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1680880197082/6f9a0ca3-b2bf-4ac1-a533-d8b4f1c6e37b.png
-tags: network, radio, networking, wireless-internet-service-providers-in-nigeria, network-mast
+tags: network, computer-science, radio, networking, computernetwork, computer-networking, wireless-internet-service-providers-in-nigeria, network-mast
 
 ---
 
@@ -111,19 +111,23 @@ For Internet connection, it's also almost the same, but with some interesting ex
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680845784600/7c4883da-060d-4443-b82b-ce548e9d3578.png align="center")
 
-Every time we use **mobile data**, that's internet access to your mobile phone via the SIM(Subscriber Identity Module) provided by Telcos like MTN, Airtel and the like in Nigeria, some radio magic happens.
+Every time we use **mobile data**, that's internet access to your mobile phone via the SIM(Subscriber Identity Module) provided by Telcos like MTN, Airtel and the likes in Nigeria. Here, some radio magic and really complex engineering happens.
 
-When you or anybody access the internet, it simply means you have access to files on the **INTER**connected **NET**work, a connection of millions of computers around the world. For example, this means you can reach and talk to computers owned by Google, therefore allowing you access to applications on their computers like Google's search engine, Youtube. On the internet you can access not just Google's computers though, you have access to Wikipedia, Zoom, TikTok, Linkedin, Facebook, Amazon, Jumia, Bolt, Uber and millions of other website out there.
+When you or anybody access the internet, it simply means you have access to files on the **INTER**connected **NET**work, a connection of millions of computers around the world. For example, this means you can reach and talk to computers owned by Google, allowing you access to their applications as well. Examples of those are: Google's search engine, Youtube, GMail, Google Cloud, and many more.
 
-You can use their applications because they are available on the internet. You also have the ability to send files to computers on the internet(UPLOAD) or pull down files from the internet(DOWNLOAD), which is mostly what you do, when you watch, reels, shorts, stream movies etcetera.
+On the internet you can access not just Google's computers though, you have access to Wikipedia, Zoom, TikTok, Linkedin, Facebook, Amazon, Jumia, Bolt, Uber and millions of other websites.
 
-The internet is not some magic, but rather a very well thought through connections between continents with resources, via fibre cables laid on the sea floor, which are then picked up and managed by ISPs, data centers or service providers within each countries where they land.
+You can get access to these applications on their powerful computers(servers) because they are publicly available on the internet. You also have the ability to send files to those computers (**UPLOAD**) or pull down files from them(**DOWNLOAD**), which is mostly what we all do. You download when you watch, reels, shorts, stream movies etcetera, and you upload data when you change your profile picture, post to your Whatsapp status, post reels, youtube, videos and share memes.
+
+The internet is not some magic, but rather a well thought through connections of fibre cables between continents laid on the sea floor. These cables are the backbone of the internet, managed by ISPs, data centers or service providers within each countries on the continents they land.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680858690329/b51dfd8b-080c-4989-bfeb-3d2c0d284bd3.png align="center")
 
 ⬆️ | [Image](https://www.submarinecablemap.com/) showing the Fiber cables under the sea, powering the internet.
 
-How you reach those servers is in itself a networking topic deserving a write up of its own and an beautiful engineering feat handled by Internet service providers around the world. But now, we'll just talk discuss the role the network masts deployed by telcos to extend their network, play in the whole process.
+How your device reach those servers over the available number of cables, via the mast, is in itself a networking topic deserving a write up of its own. It is a beautiful and very well executed feat of network engineering handled by large companies around the world.
+
+For now, we'll just talk discuss the role the network masts deployed by telcos to extend their network, play in the whole process.
 
 * When you access the internet(assuming you still have an active data **subscription**), the data allows you to speak to the mast which passes on that request to other masts.
     
@@ -148,9 +152,9 @@ To make this quite relatable and practical, we'd use Whatsapp. Let's try a scena
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680864492972/23e870af-4f7b-4068-803f-07b3d982b1db.png align="center")
 
-➡️ | You open Whatsapp, and you get to the DM where you received the voice message from a friend.
+➡️ | You open Whatsapp, where you received a voice message from a friend.
 
-➡️ | You tap the download icon, and then WhatsApp sends a data request from the application through your phone, to the network mast your phone is connected to, either MTN, Airtel or GLO or any other ISP around the world. This request is transmitted as radio waves over the air from your phone to the network mast.
+➡️ | You tap the download icon, and then WhatsApp sends a data request from the application through your phone, to the network mast your phone is connected to, managed by either MTN, Airtel, GLO or any other Telco. This request is transmitted as radio waves over the air from your phone to the network mast.
 
 ➡️ | The network mast receives the request and forwards it to the nearest base station, which serves as a gateway to MTN's core network.
 
@@ -158,19 +162,19 @@ To make this quite relatable and practical, we'd use Whatsapp. Let's try a scena
 
 ➡️ | The internet gateway sends the request out onto the internet, where it reaches a WhatsApp server, these servers are located in data centers across the world, in places like the United States, Europe, and Asia. So depending on which server the voice message is on, the request would most likely pass through fiber cables under the sea to get it.
 
-➡️ | WhatsApp server gets the voice message you asked for and sends it back through the internet to MTN's network.
+➡️ | WhatsApp server finds the voice message you asked for and sends it back through the internet to MTN's network.
 
 ➡️ | The voice message travels back through the MTN's core network and is routed to the appropriate base station and network mast to reach your phone.
 
-➡️ | Your phone receives the voice message and stores it in memory or storage, allowing you to listen to it.
+➡️ | Your phone receives the voice message and stores it in storage so you have it permanently, and then move it to memory allowing you to listen to it.
 
-This happens for everything you download on your phone, image, video, audio, sticker, voice message, even when you make voice and video calls on WhatsApp or any other application on your device.
+This happens for everything you download on your phone, image, video, audio, sticker, voice message, even when you make voice and video calls on WhatsApp or on any other application on your device.
 
-The best part about all of this is that it happens so fast, you don't even know what just happened.
+The best part about all of this is that it happens so fast, you don't even know what just happened. The under-sea fibre cables move data around at the speed of light.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680862622916/2caeff0c-3047-4ab2-817d-c01461e4df12.jpeg align="center")
 
-Without network masts, the majority of everyone wouldn't be able to do things like making calls, sending texts or using the internet. This is slowly changing though, as there are already things like FTTH(Fiber-To-The-Home) where you have a wired connection to your house to access the internet instead, there is also now a growing battle of satellite internet projects with the likes of [HughesNet](https://www.hughesnet.com/), [Viasat](https://www.viasat.com/), [Starlink](https://www.starlink.com/), [Oneweb](https://oneweb.net/), [Telesat](https://www.telesat.com/), [Project-Kuiper](https://www.aboutamazon.com/what-we-do/devices-services/project-kuiper) etcetera. Also, we have our popular easy to use Wifi/Hotspot network too that we could quickly use to share files with a friend.
+Without network masts, the majority of all of us wouldn't be able to efficiently do the everyday things we do. Things like making calls, sending texts or using the internet. This is slowly changing though, as there are already things like FTTH(Fiber-To-The-Home) where you have a wired connection to your house to access the internet instead, there is also now a growing battle of satellite internet projects with the likes of [HughesNet](https://www.hughesnet.com/), [Viasat](https://www.viasat.com/), [Starlink](https://www.starlink.com/), [Oneweb](https://oneweb.net/), [Telesat](https://www.telesat.com/), [Project-Kuiper](https://www.aboutamazon.com/what-we-do/devices-services/project-kuiper) etcetera. Also, we have our popular easy to use Wifi/Hotspot network too that we could quickly use to share files with a friend.
 
 ### **Then why do we pay for internet I still hear you ask?**
 
