@@ -10,7 +10,7 @@ tags: operating-system, nodejs, automation, windows, scripting
 
 I dual boot, which means I run two operating systems on my personal computer. I use Microsoft Windows operating system as my personal use OS and Linux Mint, an Ubuntu-based Linux distribution as my code-writing environment, which also allows me to tinker around with anything and everything on the OS, without fear of losing personal files.
 
-On Windows, I tend to take a lot of screenshots using the (🪟 + PrtSc) command, I do this for very different reasons. Over time, I began to realize I had an issue with how Windows labeled each screenshot image file in the folder where they were saved.
+On Windows, I tend to take a lot of screenshots using the (🪟 + PrtSc) command, I do this for very different reasons. Over time, I realized I now had an issue with how Windows labeled each screenshot image file in the folder where they were saved.
 
 Each screenshot captured on Windows is named in the format &gt;&gt; ( Screenshot + (Number) + .png ).
 
