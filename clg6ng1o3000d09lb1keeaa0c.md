@@ -145,8 +145,8 @@ For now, we'll just talk discuss the role the network masts deployed by telcos t
     
 * Your phone receives the requested data.
     
-    This entire process occurs within a matter of seconds.
-    
+
+All of these happen within seconds.
 
 To make this quite relatable and practical, we'd use Whatsapp. Let's try a scenario where we download a voice message(an audio file) from a friend using MTN's network
 
@@ -160,7 +160,7 @@ To make this quite relatable and practical, we'd use Whatsapp. Let's try a scena
 
 ➡️ | The request is then transmitted across the MTN core network to an internet gateway, which connects the MTN network to the internet.
 
-➡️ | The internet gateway sends the request out onto the internet, where it reaches a WhatsApp server, these servers are located in data centers across the world, in places like the United States, Europe, and Asia. So depending on which server the voice message is on, the request would most likely pass through fiber cables under the sea to get it.
+➡️ | The internet gateway sends the request out onto the internet, where it reaches a WhatsApp server, these servers are located in data centers across the world, in places like the United States, Europe, and Asia. So depending on which continent the server the voice message is on, the request would pass through fiber cables connecting our continent to the source continent to fetch it.
 
 ➡️ | WhatsApp server finds the voice message you asked for and sends it back through the internet to MTN's network.
 
@@ -196,9 +196,9 @@ A clearer image should have appeared by now, as to how much it costs to start an
 
 This is why we pay to use the internet, pay for airtime to make calls and send SMS.
 
-**FunFact:** It is called **airtime** because when you make a voice call, use the internet or take a call, your phone uses radio waves to communicate with the cellular network over the **'air'**. How long you can do that, the **'time'** is based on how much you pay. |😌|
+**FunFact:** It is called **airtime** because when you make a voice call, use the internet or take a call, your phone uses radio waves to communicate with the cellular network over the **'air'**. How long you can do that, the **'time'** is based on how much you pay.
 
-If you read it all to this point, thank you..💪🏾..
+If you read it all to this point, thank you..
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680864966845/442d0907-38b9-4537-8071-ba6084828b46.gif align="center")
 
