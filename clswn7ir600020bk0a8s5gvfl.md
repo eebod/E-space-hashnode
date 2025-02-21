@@ -8,7 +8,7 @@ tags: software-architecture, computer-science, whatsapp, technical-writing-1, wh
 
 ---
 
-Let's keep this simple and straight to the point. You want to know what I found, I also want to share this. But hey, I wouldn't only just tell you that though, I like to geek about the technicals, you would have to hear that as well. So, it's a 2-for-1 treat tonight. Let's get right into it.
+Let's keep this simple and straight to the point. You want to know what I found, I also want to share this. But hey, I would not only tell you just that though, I like to geek about the technicals, you would have to hear that as well. So, it's a 2-for-1 treat tonight. Let's get right into it.
 
 ### Why is this possible now?
 
@@ -77,11 +77,11 @@ Ahhh yes! This is a very valid question. The image above is assumed to be of bet
 
 To prove that this approach to updating media on Whatsapp actually improves the quality, there are two tests involved, the visual and size test.
 
-* **Visual Test**
+**Visual Test**
+
+* For the visual test, all I have to do is post the same images side by side, with the first using the HD upload method, and the other,the regular status upload method we are all used to.
     
-    For the visual test, all I have to do is post the same images side by side, with the first using the HD upload method, and the other,the regular status upload method we are all used to.
-    
-* Unforunately, I would not be able to highlight the differences on here, this is due to the fact that, this platform(hashnode) performs its image compression when uploaded here, this would tamper with the quality of the images being compared and make it very hard to make out any difference. But you can do this yourself and find the difference.
+* Unfortunately, I would not be able to highlight the differences on here, this is due to the fact that, this platform(hashnode) performs its image compression when uploaded here, this would tamper with the quality of the images being compared and make it very hard to make out any difference. But you can do this yourself and find the difference.
     
 
 **Size Test**
@@ -143,7 +143,7 @@ This whole process is one definition to caching, "temporarily saving data copies
 
 You might then think, but don't Meta have big and bad enough servers with enough space on their servers for all these? Yes, but also, the moment you realize that they have around a billion daily active users and a large percentage of these persons including you and I, send different files every now and then in Kilobytes, Megabytes and Gigabytes, you'll know that this save them Terabytes on Terabytes of server space per second with just this approach and it's very very reasonable to.
 
-**So how does this and the HD Whatsapp Status thing relate?**
+### **So how does this and the HD Whatsapp Status thing relate?**
 
 If you haven't made the connection yet, here it is. So the first time you send that HD media to yourself, it gets sent to Whatsapp's servers like every other message or file.
 
